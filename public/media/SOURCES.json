@@ -1,0 +1,210 @@
+{
+  "project": "Timeless Decor and Event",
+  "preparedOn": "2026-10-19",
+  "mediaOrigin": "All imagery and films originate from the eight files uploaded by the user in this session. No stock or generated imagery is used.",
+  "license": "User-supplied for the requested website. No independent assertion of ownership, photographer identity, publication license, completed-client work, client endorsement, or event facts is made. Several source filenames reference Klickpin; their external original publication is unknown.",
+  "attribution": "Original visible branding and contact watermarks retained on supplied photographs. No photographer attribution supplied.",
+  "assets": [
+    {
+      "file": "wedding.webp",
+      "source": "WhatsApp Image 2026-10-16 at 10.56.50 AM.jpeg",
+      "sourceType": "user-provided photograph",
+      "description": "Ivory and gold wedding d\u00e9cor with floral stage and a flower-filled reflective walkway.",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 146424,
+      "illustrative": false,
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only",
+      "processing": "Converted to WebP; original branding retained."
+    },
+    {
+      "file": "stage.webp",
+      "source": "WhatsApp Image 2026-10-16 at 10.56.52 AM.jpeg",
+      "sourceType": "user-provided photograph",
+      "description": "Sculptural ivory arches, candlelight, flowers, and traditional Ethiopian basket details.",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 80006,
+      "illustrative": false,
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only",
+      "processing": "Converted to WebP; original branding retained."
+    },
+    {
+      "file": "soiree.webp",
+      "source": "WhatsApp Image 2026-10-16 at 10.56.51 AM.jpeg",
+      "sourceType": "user-provided photograph",
+      "description": "Blush and cream balloon installation with fluted display plinths.",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 72218,
+      "illustrative": false,
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only",
+      "processing": "Converted to WebP; original branding retained."
+    },
+    {
+      "file": "celebration.webp",
+      "source": "WhatsApp Image 2026-10-16 at 10.56.51 AM (1).jpeg",
+      "sourceType": "user-provided photograph",
+      "description": "Colorful balloon and floral installation with white display plinths.",
+      "dimensions": [
+        640,
+        455
+      ],
+      "bytes": 70402,
+      "illustrative": false,
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only",
+      "processing": "Converted to WebP; original branding retained. Original black letterbox trimmed."
+    },
+    {
+      "file": "hero.webp",
+      "source": "From_Klickpin_com_Mental_Wellness_Tips_42_Ideas_to_Copy_pin_id_.mp4",
+      "sourceType": "still from user-provided video",
+      "sourceFrameSeconds": 2.5,
+      "description": "Cinematic portrait view across white flowers to a sculptural ivory stage.",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "bytes": 109484,
+      "illustrative": false,
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only",
+      "processing": "Extracted source video frame; converted to WebP."
+    },
+    {
+      "file": "story.webp",
+      "source": "From_Klickpin_com_Mental_Wellness_Tips_42_Ideas_to_Copy_pin_id_.mp4",
+      "sourceType": "still from user-provided video",
+      "sourceFrameSeconds": 1,
+      "description": "Close-up white floral arrangement and clear chairs in an event space.",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "bytes": 100018,
+      "illustrative": false,
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only",
+      "processing": "Extracted source video frame; converted to WebP."
+    },
+    {
+      "file": "detail.webp",
+      "source": "From_Klickpin_com_870039221750554134_pin_id_870039221750554134.mp4",
+      "sourceType": "still from user-provided video",
+      "sourceFrameSeconds": 2,
+      "description": "Traditional woven basket details alongside florals and candlelight.",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "bytes": 111090,
+      "illustrative": false,
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only",
+      "processing": "Extracted source video frame; converted to WebP."
+    },
+    {
+      "file": "gala.webp",
+      "source": "From_Klickpin_com_Mental_Wellness_Tips_42_Ideas_to_Copy_pin_id_.mp4",
+      "sourceType": "still from user-provided video",
+      "sourceFrameSeconds": 21,
+      "description": "White floral tablescape detail. Filename is a presentation slot; not verified as a corporate gala.",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "bytes": 88690,
+      "illustrative": false,
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only",
+      "processing": "Extracted source video frame; converted to WebP."
+    },
+    {
+      "file": "film-soiree.webp",
+      "source": "IMG_0581.MP4",
+      "sourceType": "still from user-provided video",
+      "sourceFrameSeconds": 3,
+      "description": "Pink balloon celebration installation and bow-shaped d\u00e9cor.",
+      "dimensions": [
+        464,
+        848
+      ],
+      "bytes": 43016,
+      "illustrative": false,
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only",
+      "processing": "Extracted source video frame; converted to WebP."
+    },
+    {
+      "file": "film-wedding.webp",
+      "source": "From_Klickpin_com_Fresh_sunset_drive_moments_with_simple_charm_and.mp4",
+      "sourceType": "still from user-provided video",
+      "sourceFrameSeconds": 4,
+      "description": "White sculptural stage with arch lighting and floral arrangements.",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "bytes": 106828,
+      "illustrative": false,
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only",
+      "processing": "Extracted source video frame; converted to WebP."
+    },
+    {
+      "file": "hero.mp4",
+      "source": "From_Klickpin_com_Mental_Wellness_Tips_42_Ideas_to_Copy_pin_id_.mp4",
+      "sourceType": "user-provided video",
+      "description": "First 14 seconds; visual wedding/floral d\u00e9cor study.",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "durationSeconds": 14.0,
+      "bytes": 2235860,
+      "illustrative": false,
+      "processing": "H.264, 24 fps, yuv420p, fast-start MP4; audio track removed for a silent editorial experience.",
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only"
+    },
+    {
+      "file": "film-wedding.mp4",
+      "source": "From_Klickpin_com_Fresh_sunset_drive_moments_with_simple_charm_and.mp4",
+      "sourceType": "user-provided video",
+      "description": "Full clip; illuminated white floral arches.",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "durationSeconds": 7.375,
+      "bytes": 1269806,
+      "illustrative": false,
+      "processing": "H.264, 24 fps, yuv420p, fast-start MP4; audio track removed for a silent editorial experience.",
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only"
+    },
+    {
+      "file": "film-soiree.mp4",
+      "source": "IMG_0581.MP4",
+      "sourceType": "user-provided video",
+      "description": "Full clip; pink balloon installation.",
+      "dimensions": [
+        464,
+        848
+      ],
+      "durationSeconds": 19.583333,
+      "bytes": 1480507,
+      "illustrative": false,
+      "processing": "H.264, 24 fps, yuv420p, fast-start MP4; audio track removed for a silent editorial experience.",
+      "eventClientDateVenue": "Not supplied; descriptive collection titles only"
+    }
+  ],
+  "designReferences": [
+    {
+      "url": "https://chapter.millanova.com/",
+      "notes": "Four cinematic stories; fullscreen portrait film imagery; spare Explore/About/Collection navigation; strong display type contrasted with modest sans captions. Source design only; no code, media or proprietary fonts copied."
+    },
+    {
+      "url": "https://www.verostudio.com/",
+      "notes": "Menu/Close overlay control, dominant serif and italic editorial titles, comprehensive navigation and contact, recurring direct commission CTA. Source design only; no code, media or proprietary fonts copied."
+    }
+  ]
+}

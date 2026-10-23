@@ -1,0 +1,83 @@
+{
+  "retrievedOn": "2026-10-19",
+  "provider": "Google Fonts official CSS API and Google Fonts official GitHub repository",
+  "stylesheet": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&display=swap",
+  "purpose": "Locally hosted font assets; no runtime Google Fonts request required.",
+  "assets": [
+    {
+      "file": "cormorant-garamond-latin-italic.woff2",
+      "family": "Cormorant Garamond",
+      "style": "italic",
+      "weightRange": "300 700",
+      "subset": "Latin",
+      "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSo.woff2",
+      "bytes": 39260,
+      "sha256": "6f2f5c3b1abc3d0bb035a927f66a90ca873f94fc31c4966c8d024142c2036e55",
+      "license": "SIL Open Font License 1.1",
+      "verifiedVariableAxes": [
+        {
+          "tag": "wght",
+          "name": "Weight",
+          "min": 300.0,
+          "default": 300.0,
+          "max": 700.0
+        }
+      ],
+      "verification": "WOFF2 signature and declared file size verified; font decoded by system FreeType; variable axes extracted using FT_Get_MM_Var."
+    },
+    {
+      "file": "cormorant-garamond-latin.woff2",
+      "family": "Cormorant Garamond",
+      "style": "normal",
+      "weightRange": "300 700",
+      "subset": "Latin",
+      "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2",
+      "bytes": 37640,
+      "sha256": "d80df8ff5aecd299a61549f9e29ab1ed0b9b05f4ea71d50fe978e07d5240b235",
+      "license": "SIL Open Font License 1.1",
+      "verifiedVariableAxes": [
+        {
+          "tag": "wght",
+          "name": "Weight",
+          "min": 300.0,
+          "default": 300.0,
+          "max": 700.0
+        }
+      ],
+      "verification": "WOFF2 signature and declared file size verified; font decoded by system FreeType; variable axes extracted using FT_Get_MM_Var."
+    },
+    {
+      "file": "inter-latin.woff2",
+      "family": "Inter",
+      "style": "normal",
+      "weightRange": "100 900",
+      "subset": "Latin",
+      "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "bytes": 48256,
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "license": "SIL Open Font License 1.1",
+      "verifiedVariableAxes": [
+        {
+          "tag": "wght",
+          "name": "Weight",
+          "min": 100.0,
+          "default": 400.0,
+          "max": 900.0
+        }
+      ],
+      "verification": "WOFF2 signature and declared file size verified; font decoded by system FreeType; variable axes extracted using FT_Get_MM_Var."
+    },
+    {
+      "file": "Cormorant-Garamond-OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/cormorantgaramond/OFL.txt",
+      "bytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+    },
+    {
+      "file": "Inter-OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt",
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    }
+  ]
+}

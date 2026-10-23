@@ -1,0 +1,24 @@
+.section { padding: 106px 0 103px; background: #eee8dc; color: #242820; text-align: center; }
+.container { width: min(1180px,88%); margin: 0 auto; }
+.eyebrow { font-size: 9px; line-height: 1.5; text-transform: uppercase; letter-spacing: .19em; color: #696b60; margin: 0 0 38px; }
+.quoteMark { font-family: var(--font-serif),Georgia,serif; font-size: 94px; height: 53px; line-height: 1; color: #ad9473; font-weight: 300; }
+.quote { padding: 0; margin: 0 auto; max-width: 1060px; }
+.quote p { font-family: var(--font-serif),Georgia,serif; font-size: clamp(36px,4.5vw,71px); line-height: 1.12; letter-spacing: -.025em; font-weight: 400; margin: 0; }
+.quote em { font-weight: 400; color: #8b7c66; }
+.testimonials, .philosophy { min-width: 0; }
+.attribution { display: flex; align-items: center; justify-content: center; gap: 13px; margin: 32px 0 0; }
+.attribution > div { display: flex; flex-direction: column; gap: 7px; }
+.name { font-size: 9px; text-transform: uppercase; letter-spacing: .14em; }
+.role { color: #696b60; font-size: 10px; letter-spacing: .01em; }
+.portrait { border-radius: 50%; object-fit: cover; }
+.controls { display: flex; justify-content: center; align-items: center; gap: 28px; margin: 28px 0 0; }
+.controls button { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; border: 1px solid #24282038; background: none; cursor: pointer; transition: color .2s ease, background .2s ease; }
+.controls button:hover { background: #242820; color: #f4f0e8; }
+.controls > span { display: flex; align-items: center; gap: 11px; font-size: 9px; font-variant-numeric: tabular-nums; color: #696b60; }
+.controls i { height: 1px; width: 26px; background: #24282047; }
+.press { display: flex; align-items: center; gap: 50px; border-top: 1px solid #24282024; padding-top: 30px; margin-top: 65px; text-align: left; }
+.press > span { color: #696b60; font-size: 9px; text-transform: uppercase; letter-spacing: .12em; flex-shrink: 0; }
+.press > div { display: flex; justify-content: space-around; flex-wrap: wrap; align-items: center; gap: 22px; flex: 1; }
+.press a { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-serif),Georgia,serif; font-size: 25px; }
+@media (max-width: 700px) { .section { padding: 76px 0 75px; } .eyebrow { font-size: 8px; margin-bottom: 29px; } .quoteMark { font-size: 79px; height: 47px; } .quote p { font-size: clamp(36px,8vw,50px); line-height: 1.13; } .attribution { margin-top: 25px; } .name { font-size: 8px; } .role { font-size: 9px; } .press { flex-direction: column; gap: 22px; padding-top: 24px; margin-top: 45px; } .press > div { justify-content: center; gap: 22px; } .press a { font-size: 23px; } }
+@media (prefers-reduced-motion: reduce) { .controls button { transition: none; } }

@@ -1,0 +1,15 @@
+import { readdirSync } from "node:fs";
+import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
+
+const root = fileURLToPath(new URL("../", import.meta.url));
+const files = readdirSync(new URL("../tests/", import.meta.url))
+  .filter((name) => name.endsWith(".test.ts"))
+  .sort()
+  .map((name) => fileURLToPath(new URL(`../tests/${name}`, import.meta.url)));
+const result = spawnSync(process.execPath,
+  ["--import", "tsx", "--test", "--test-isolation=none", ...files],
+  { cwd: root, stdio: "inherit" },
+);
+if (result.error) console.error(result.error.message);
+process.exit(result.status ?? 1);
