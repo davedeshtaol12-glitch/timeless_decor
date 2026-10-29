@@ -1,23 +1,23 @@
 {
   "_translatorNote": "Replace each English value with its Oromiffa (Afaan Oromoo) translation. Keep the keys, {placeholders} and <tags> exactly as they are. Any value left in English (or deleted) falls back to English automatically.",
   "meta": {
-    "title": "Timeless Décor & Events — Creating Timeless Memories for Every Celebration",
+    "title": "Timeless Décor & Events — Kabajaa Hundumaaf Yaadannoo Bara Baraan Turu Uumuu",
     "titleTemplate": "%s | Timeless Décor & Events",
-    "description": "A full-service event decoration and planning company. Weddings, birthdays, graduations, baby showers, engagements and corporate events. Call 0941097286.",
+    "description": "Dhaabbata faaya ayyaanotaa fi karoorfachuu tajaajila guutuu kennu. Fuudhaa fi heeruma, dhaloota, eebba, baby showers, kaadhimamaa fi ayyaanota dhaabbatao. Lakkoofsa 0941097286 irratti bilbilaa.",
     "ogTitle": "Timeless Décor & Events",
-    "tagline": "Creating Timeless Memories for Every Celebration",
-    "ogImageAlt": "Ivory and gold décor by Timeless"
+    "tagline": "Kabajaa Hundumaaf Yaadannoo Bara Baraan Turu Uumuu",
+    "ogImageAlt": "Faaya adii fi warqee kan Timeless"
   },
   "common": {
-    "skipToContent": "Skip to content",
-    "closeDialog": "Close dialog",
-    "noscript": "For gallery films and the inquiry form, enable JavaScript. You can always call",
-    "motto": "Creating Timeless Memories Through Elegant Celebrations.",
+    "skipToContent": "Gara qabiyyee ijoo darbi",
+    "closeDialog": "Ergaa cufi",
+    "noscript": "Suuraalee fi unka gaaffiitiif, JavaScript dandeessisi. Yeroo hundumaa bilbiluu dandeessa",
+    "motto": "Ayyaanotabareedoo ta'aniin Yaadannoo Bara Baraan Turu Uumuu.",
     "brand": "Timeless Décor & Events",
-    "callStudio": "Call the studio"
+    "callStudio": "Gara iskadiyoo bilbilaa"
   },
   "language": {
-    "label": "Language",
+    "label": "Afaan",
     "en": "English",
     "am": "አማርኛ",
     "om": "Afaan Oromoo",
@@ -28,505 +28,505 @@
     }
   },
   "header": {
-    "logoAlt": "Timeless Décor and Event Planners",
-    "homeLabel": "Timeless Décor & Events, home",
-    "note": "Creating timeless memories",
-    "contactUs": "Contact us",
-    "menu": "Menu"
+    "logoAlt": "Karoorfattoota Faayaa fi Ayyaanaa Timeless",
+    "homeLabel": "Timeless Décor & Events, fuula duraa",
+    "note": "Yaadannoo bara baraan turu uumuu",
+    "contactUs": "Nu qunnamaa",
+    "menu": "Baafata"
   },
   "menu": {
-    "title": "Explore Timeless",
-    "navLabel": "Main navigation",
+    "title": "Timeless Sakatta'aa",
+    "navLabel": "Karaan ijoo",
     "overline": "TIMELESS DÉCOR & EVENTS",
     "links": {
-      "home": "The beginning",
-      "reel": "The reel",
-      "about": "About us",
-      "services": "Our services",
-      "work": "Our work",
-      "why": "Why choose us",
-      "contact": "Contact us"
+      "home": "Jalqabbicha",
+      "reel": "Vidiichaa",
+      "about": "Waa'ee keenya",
+      "services": "Tajaajiloota keenya",
+      "work": "Hojiiwwan keenya",
+      "why": "Maaliif nu filattan",
+      "contact": "Nu qunnamaa"
     },
-    "conversation": "A CONVERSATION AWAY",
-    "quote": "Creating timeless<br></br>memories through <em>elegant celebrations.</em>"
+    "conversation": "Marii tokko qofaaf fagoorra jira",
+    "quote": "Ayyaanota bareedoo ta'aniin<br></br><em>yaadannoo bara baraan turu uumuu.</em>"
   },
   "hero": {
-    "aria": "The art of celebration",
+    "aria": "Ogummaa ayyaaneffannaa",
     "eyebrow": "TIMELESS DÉCOR & EVENTS",
-    "title": "Creating timeless<br></br><em>memories.</em>",
-    "description": "Elegant, creative and personalized celebrations,<br></br>from concept to completion.",
-    "cta": "Begin your celebration",
-    "sideNote": "WEDDINGS · BIRTHDAYS · GRADUATIONS · CORPORATE EVENTS",
-    "scrollCue": "SCROLL TO<br></br>DISCOVER",
-    "chapters": "Choose a visual chapter",
-    "viewSlide": "View {label}",
-    "stepInside": "STEP INSIDE",
-    "pause": "Pause background film",
-    "play": "Play background film",
-    "filmTitle": "Step inside: {label}",
+    "title": "Yaadannoo bara baraan<br></br><em>turu uumuu.</em>",
+    "description": "Ayyaanota bareedoo, uumama qabeessaa fi kan dhuunfaaf mijatan,<br></br>yaada irraa kaasee haga xumuraatti.",
+    "cta": "Ayyaana keessan jalqabaa",
+    "sideNote": "FUUDHAA FI HEERUMA · DHALOOTA · EEBBA · AYYAANOTA DHAABBATAA",
+    "scrollCue": "ARGATAAF<br></br>GADI SHIBBIILI",
+    "chapters": "Boqonnaa suuraa filadhaa",
+    "viewSlide": "{label} ilaali",
+    "stepInside": "KEESSA SEENAA",
+    "pause": "Viidiyoo duubaa dhaabi",
+    "play": "Viidiyoo duubaa taphachiisi",
+    "filmTitle": "Keessa seeni: {label}",
     "filmEyebrow": "TIMELESS DÉCOR & EVENTS · {label}",
-    "filmAria": "{label}: a silent décor film",
-    "filmError": "The film could not load.",
-    "openOriginal": "Open the original film",
-    "noVideo": "Your browser does not support this film.",
-    "openMedia": "Open the media",
-    "stripLabel": "Celebrations we design",
+    "filmAria": "{label}: viidiyoo faayaa sagalee hin qabne",
+    "filmError": "Viidiyichi fe'amuu hin dandeenye.",
+    "openOriginal": "Viidiyoo uumamaa banaa",
+    "noVideo": "Browser keessan viidiyoo kana deeggaruu hin danda'u.",
+    "openMedia": "Miidiyaa banaa",
+    "stripLabel": "Ayyaanota nuti bocnu",
     "strip": {
-      "weddings": "Weddings",
-      "birthdays": "Birthdays",
-      "graduations": "Graduations & baby showers",
-      "corporate": "Corporate events"
+      "weddings": "Fuudhaa fi heeruma",
+      "birthdays": "Guyyoota dhalootaa",
+      "graduations": "Eebbaa fi baby showers",
+      "corporate": "Ayyaanota dhaabbataa"
     },
     "slides": {
       "ivory": {
-        "label": "Ivory & gold",
-        "caption": "A study in light, texture and quiet grandeur.",
-        "alt": "White floral arches and candlelit details in an ivory event setting"
+        "label": "Ivory & gold (Adiifi warqee)",
+        "caption": "Ifaa, boca fi miidhagina calqabaa irratti qorannoo.",
+        "alt": "Iddoo qophii ivory irratti gamoowwan abaaboo adii fi ibsaa shamaa"
       },
       "ritual": {
-        "label": "Rooted in ritual",
-        "caption": "Thoughtful details. A beautiful sense of belonging.",
-        "alt": "Traditional woven baskets with white and blush floral accents"
+        "label": "Aadaarratti kan hundaa'e",
+        "caption": "Bal'ina yaada keessa galche. Miira maatii ta'uu miidhagaa.",
+        "alt": "Guutuu aadaa kan midhaagfaman gaffoo abaaboo adii fi pink wajjin"
       },
       "blush": {
-        "label": "In full bloom",
-        "caption": "A little wonder. A world of possibility.",
-        "alt": "A pink balloon celebration with a sculptural bow and table setting"
+        "label": "Abaaboodhaan guutamee",
+        "caption": "Dinqii xiqqoo. Addunyaa carraawwanii.",
+        "alt": "Ayyaana balloon pink bokiin fi qophii gabatee wajjin"
       }
     }
   },
   "reel": {
-    "aria": "A reel of recent celebrations",
-    "heading": "A reel of recent celebrations",
-    "cta": "Begin your celebration",
-    "hint": "Scroll to explore",
-    "cursor": "Scroll",
-    "soundOn": "Turn film sound off",
-    "soundOff": "Turn film sound on",
-    "on": "ON",
-    "off": "OFF",
+    "aria": "Viidiyoo ayyaanota dhihoo",
+    "heading": "Viidiyoo ayyaanota dhihoo",
+    "cta": "Ayyaana keessan jalqabaa",
+    "hint": "Sakatta'uuf gadi shibbili",
+    "cursor": "Shibbili",
+    "soundOn": "Sagalee viidiyoo dhaabi",
+    "soundOff": "Sagalee viidiyoo kaas",
+    "on": "BANI",
+    "off": "CUFI",
     "credit": "Timeless Décor",
     "creditSuffix": "and Event",
     "panels": {
       "ivory": {
         "label": "Ivory & gold",
-        "caption": "A study in light, texture and quiet grandeur.",
-        "alt": "White floral arches and candlelit details in an ivory event setting"
+        "caption": "Ifaa, boca fi miidhagina calqabaa irratti qorannoo.",
+        "alt": "Iddoo qophii ivory irratti gamoowwan abaaboo adii fi ibsaa shamaa"
       },
       "wedding": {
-        "label": "The wedding",
-        "caption": "Vows beneath a canopy of blooms.",
-        "alt": "A wedding ceremony dressed in florals"
+        "label": "Fuudhaa fi heeruma",
+        "caption": "Kakuu abaaboo jala.",
+        "alt": "Sirna fuudhaa fi heerumaa abaaboodhaan miidhagfame"
       },
       "ritual": {
-        "label": "Rooted in ritual",
-        "caption": "Thoughtful details. A beautiful sense of belonging.",
-        "alt": "Traditional woven baskets with white and blush floral accents"
+        "label": "Aadaarratti kan hundaa'e",
+        "caption": "Bal'ina yaada keessa galche. Miira maatii ta'uu miidhagaa.",
+        "alt": "Guutuu aadaa kan midhaagfaman gaffoo abaaboo adii fi pink wajjin"
       },
       "blush": {
-        "label": "In full bloom",
-        "caption": "A little wonder. A world of possibility.",
-        "alt": "A pink balloon celebration with a sculptural bow and table setting"
+        "label": "Abaaboodhaan guutamee",
+        "caption": "Dinqii xiqqoo. Addunyaa carraawwanii.",
+        "alt": "Ayyaana balloon pink bokiin fi qophii gabatee wajjin"
       },
       "stage": {
-        "label": "The stage",
-        "caption": "Spaces designed to be felt.",
-        "alt": "A sculpted stage design"
+        "label": "Pilaatfoormii",
+        "caption": "Bakkeewwan miira uumuuf bocaman.",
+        "alt": "Boca piriinsippilii kan qophaa'e"
       },
       "soiree": {
-        "label": "Private soirée",
-        "caption": "An evening, beautifully imagined.",
-        "alt": "A candlelit private soirée table"
+        "label": "Gabaabaa dhuunfaa",
+        "caption": "Galgala, miidhinaan yaadame.",
+        "alt": "Gabatee qophii dhuunfaa ibsaa shamaatiin ibsame"
       },
       "celebration": {
-        "label": "Celebration",
-        "caption": "Joy, composed with care.",
-        "alt": "A joyful celebration setting"
+        "label": "Ayyaana",
+        "caption": "Gammachuu, kunuunsaan qindaa'e.",
+        "alt": "Iddoo ayyaana gammachiisaa"
       },
       "gala": {
-        "label": "The gala",
-        "caption": "Grand rooms. Quiet details.",
-        "alt": "A gala dinner arranged with floral centrepieces"
+        "label": "Gala",
+        "caption": "Kutaa gurguddoo. Bal'ina calqabaa.",
+        "alt": "Irbaata gala qophii abaabootiin qindaa'e"
       }
     }
   },
   "story": {
-    "overline": "01 / ABOUT US",
-    "overlineEnd": "CREATING TIMELESS MEMORIES",
-    "title": "Ordinary occasions,<br></br><em>unforgettable<br></br> celebrations.</em>",
-    "lead": "Timeless Décor & Events is a full-service event decoration and planning company dedicated to transforming ordinary occasions into unforgettable celebrations.",
-    "body": "We specialize in designing elegant, creative and personalized event experiences that reflect each client’s unique vision and style. Whether it’s an intimate family gathering or a grand celebration, our experienced team delivers exceptional décor, flawless coordination and outstanding customer service from concept to completion.",
-    "link": "Explore our services",
-    "footnote": "ELEGANT. CREATIVE. PERSONALIZED.",
-    "mainImageAlt": "An abundant composition of white flowers with an ivory event setting beyond",
-    "detailImageAlt": "Woven Ethiopian basket details with delicate floral accents",
+    "overline": "01 / WAA'EE KEENYA",
+    "overlineEnd": "YAADANNOO BARA BARAAN TURU UUMUU",
+    "title": "Yeroo idilee,<br></br><em>ayyaanota hin<br></br> irraamfatamne.</em>",
+    "lead": "Timeless Décor & Events dhaabbata tajaajila faaya ayyaanaa fi karoorfachuu guutuu kennuudha, yeroo idilee gara ayyaanota hin irraamfatamnetti jijjiiruuf kan qophaa'e.",
+    "body": "Muuxannoo qophii ayyaanaa miidhaginaa, uumama qabeessaa fi dhuunfaaf mijate kan agarsiisu raajii fi bifa abbaa dhuunfaatiin qopheessuutti ni amanna. Kabaa maatii xiqqoo ta'us ta'e ayyaana gurguddaan, gareen muuxannoo qabu kun faaya addaa, qindaa'ina hiriyyaa hin qabne fi tajaajila abbaa qabeenyaa olaanaa yaada irraa haga xumuraatti kenna.",
+    "link": "Tajaajiloota keenya sakatta'aa",
+    "footnote": "MIIZHAGAA. UUMAMA QABEESSA. DHUUFNAAF MIJATE.",
+    "mainImageAlt": "Walitti qabamiinsa abaaboo adii baay'ee qabu fi qophii ayyaanaa ivory fagootti",
+    "detailImageAlt": "Bal'ina caffee Itoophiyaa kan xiyyeeffannoo abaaboo qabu",
     "pillars": [
       {
-        "title": "Our vision",
-        "text": "To become the leading event décor and planning company, recognized for creativity, quality, innovation and excellence in delivering memorable celebrations."
+        "title": "Mul'ata keenya",
+        "text": "Dhaabbata faaya ayyaanaa fi karoorfachuu dursaa ta'uu, kalaqa, qulqullina, fi milkaa'ina ayyaana yaadatamuu qabu dhiyeessuun beekamuu."
       },
       {
-        "title": "Our mission",
-        "text": "To provide high-quality, professional, reliable and affordable event solutions, creating beautiful, memorable experiences and exceeding expectations through creativity and attention to detail."
+        "title": "Ergama keenya",
+        "text": "Furmaata ayyaanaa qulqullina olaanaa, ogeessa, amanamaa fi gatii madaalawaa ta'e dhiyeessuu, muuxannoo miidhaginaa, yaadatamuu qabu uumuu fi yaada kalaqaa fi xiyyeeffannoo bal'inaatiin eeyyamame caaluu."
       },
       {
-        "title": "Our commitment",
-        "text": "Every celebration tells a unique story. We transform your vision into reality with elegant décor, creative designs and seamless execution, beautiful, stress-free and truly unforgettable."
+        "title": "Kakuu keenya",
+        "text": "Ayyaanichi hundi se تاريخ unique tokko dubbata. Mul'ata keessan gara dhugaatti ni jijjiirra faaya miidhaginaa, bifa uumamaa fi qindaa'ina walitti fufaa, miidhagina, rakkoo malee fi dhugumaan kan hin irraamfatamne."
       },
       {
-        "title": "Our core values",
-        "text": "Excellence · Creativity · Professionalism · Integrity · Customer satisfaction · Innovation · Teamwork."
+        "title": "Gatiiwwan bu'uuraa keenya",
+        "text": "Milkaa'ina · Kalaqa · Ogeessummaa · Amanamummaa · Gammachuu abbaa qabeenyaa · Kalaqa haaraa · Hojii garee."
       }
     ]
   },
   "services": {
-    "overline": "02 / OUR SERVICES",
-    "overlineEnd": "FROM CONCEPT TO COMPLETION",
-    "title": "Every celebration,<br></br><em>beautifully dressed.</em>",
-    "intro": "From intimate gatherings to grand occasions, we design, style and deliver the setting for your day.",
-    "link": "Plan your event",
-    "scoreLabel": "At a glance",
-    "scoreAria": "Service summary for {title}",
-    "offerings": "{count, plural, one {offering} other {offerings}}",
-    "catalogueShare": "Share of our full catalogue",
-    "includes": "Includes",
-    "hoverHint": "Hover or focus a service to see its summary.",
+    "overline": "02 / TAJAAJILOOTA KEENYA",
+    "overlineEnd": "YAADA IRRAAA HAGA XUMURAATTI",
+    "title": "Ayyaanichi hundi,<br></br><em>miidhinaan kan uwwifame.</em>",
+    "intro": "Kabaa maatii xiqqoo irraa kaasee haga ayyaana gurguddaatti, ni bobbofna, ni miidhagina, ni dhiyeessina qophii guyyaa keessaniif.",
+    "link": "Ayyaana keessan karoorfachuu",
+    "scoreLabel": "Yeroo tokkotti ilaaluudhaan",
+    "scoreAria": "Gabaabaa tajaajilaa kan {title}",
+    "offerings": "{count, plural, one {tajaajila} other {tajaajiloota}}",
+    "catalogueShare": "Qooda kataloogii keenya guutuu",
+    "includes": "Kan hammate",
+    "hoverHint": "Gabaabaa isaa ilaaluuf tajaajila irratti olka'aa ykn xiyyeeffannaa kenni.",
     "groups": {
       "wedding": {
-        "title": "Wedding decoration",
+        "title": "Faaya fuudhaa fi heerumaa",
         "items": [
-          "Wedding stage design",
-          "Floral arrangements",
-          "Reception décor",
-          "Bridal table decoration",
-          "Church and outdoor wedding décor"
+          "Boca pilaatfoormii fuudhaa",
+          "Qophii abaaboo",
+          "Faaya simannaa",
+          "Faaya gabatee amantii",
+          "Faaya fuudhaa fi heerumaa mana amantaa fi alaa"
         ]
       },
       "birthday": {
-        "title": "Birthday decoration",
+        "title": "Faaya dhalootaa",
         "items": [
-          "Children’s birthday parties",
-          "Adult birthday celebrations",
-          "Theme-based birthday setups",
-          "Balloon decorations",
-          "Dessert and cake tables"
+          "Ayyaana dhalootaa ijoollee",
+          "Ayyaana dhalootaa gurguddoo",
+          "Qophii dhalootaa mata-duree irratti hundaa'e",
+          "Faaya balloon",
+          "Gabateewwan mi'eessituu fi keekii"
         ]
       },
       "graduation": {
-        "title": "Graduation decoration",
+        "title": "Faaya eebbaa",
         "items": [
-          "Graduation party décor",
-          "Photo booth setup",
-          "Stage decoration",
-          "Customized backdrops"
+          "Faaya ayyaana eebbaa",
+          "Qophii suuraa kaasuuf",
+          "Faaya pilaatfoormii",
+          "Gara duubaa (backdrops) fooyya'aa"
         ]
       },
       "babyShower": {
-        "title": "Baby shower decoration",
+        "title": "Faaya baby shower",
         "items": [
-          "Elegant baby shower themes",
-          "Gender reveal decoration",
-          "Balloon garlands",
-          "Table styling",
-          "Welcome signage"
+          "Mata-dureewwan baby shower miidhagoo",
+          "Faaya ibsa saalaa",
+          "Goonfoo balloon",
+          "Boca gabatee",
+          "Mallattoo simannaa"
         ]
       },
       "engagement": {
-        "title": "Engagement decoration",
+        "title": "Faaya kaadhimamaa",
         "items": [
-          "Romantic engagement setups",
-          "Proposal decoration",
-          "Family engagement ceremonies",
-          "Floral and lighting arrangements"
+          "Qophii kaadhimamaa jaalala",
+          "Faaya dhiyaachuu (proposal)",
+          "Sirna kaadhimamaa maatii",
+          "Qophii abaaboo fi ibsaa"
         ]
       },
       "corporate": {
-        "title": "Corporate events & anniversaries",
+        "title": "Ayyaanota dhaabbataa fi waggaa",
         "items": [
-          "Corporate anniversary celebrations",
-          "Office decoration",
-          "Award ceremonies",
-          "Product launches",
-          "Conferences and seminars"
+          "Ayyaanota waggaa dhaabbataa",
+          "Faaya waajjiraa",
+          "Sirna badhaasaa",
+          "Hojii eebba oomshaa",
+          "Konferensii fi seminaara"
         ]
       },
       "other": {
-        "title": "Other events",
+        "title": "Ayyaanota biroo",
         "items": [
           "Bridal showers",
-          "Anniversaries",
-          "Baptisms",
-          "Holiday parties",
-          "Cultural celebrations",
-          "Family gatherings",
-          "Private events",
-          "Event rentals and styling"
+          "Waggaa",
+          "Cuuphaa",
+          "Ayyaanota boqonnaa",
+          "Ayyaanota aadaa",
+          "Walitti qabamiinsa maatii",
+          "Ayyaanota dhuunfaa",
+          "Mijatoo fi faaya ayyaanaa"
         ]
       }
     }
   },
   "portfolio": {
-    "eyebrow": "Our work",
-    "title": "A world of<br></br><em>possibilities.</em>",
-    "aside": "A glimpse of the celebrations we have dressed, from elegant weddings to joyful birthdays and stage décor.",
-    "discover": "Discover the collection",
-    "filtersLabel": "Filter portfolio collections",
-    "filterCount": "{count} collections",
-    "shown": "{count, plural, one {# collection} other {# collections}} shown",
-    "shownIn": "{count, plural, one {# collection} other {# collections}} shown in {category}",
-    "openGallery": "Open {title} gallery",
-    "studies": "{count, plural, one {# study} other {# studies}}",
-    "viewGallery": "View gallery",
-    "watchFilm": "Watch film",
-    "watchFilmAria": "Watch {title} film",
-    "exploreCollection": "Explore {title} collection",
+    "eyebrow": "Hojii keenya",
+    "title": "Addunyaa<br></br><em>carraawwanii.</em>",
+    "aside": "Agarsiisa ayyaanota nuti miidhagfaman, fuudhaa fi heeruma miidhagoo irraa kaasee hanga dhaloota gammachiisoo fi faaya pilaatfoormiitti.",
+    "discover": "Kolekshinii sakatta'aa",
+    "filtersLabel": "Kolekshinii portfolio calali",
+    "filterCount": "{count} kolekshinii",
+    "shown": "{count, plural, one {# kolekshinii} other {# kolekshinii}} agarsiifame",
+    "shownIn": "Kolekshinii {category} keessatti {count, plural, one {# kolekshinii} other {# kolekshinii}} agarsiifame",
+    "openGallery": "Gaalarii {title} banaa",
+    "studies": "{count, plural, one {# qorannoo} other {# qorannoowwan}}",
+    "viewGallery": "Gaalarii ilaali",
+    "watchFilm": "Viidiyoo ilaali",
+    "watchFilmAria": "Viidiyoo {title} ilaali",
+    "exploreCollection": "Kolekshinii {title} sakatta'aa",
     "empty": {
-      "eyebrow": "Your next occasion",
-      "title": "A different stage.<br></br><em>The same attention to detail.</em>",
-      "text": "Planning a corporate event, anniversary or product launch? Let’s discuss the setting, the guest experience and the story your event should tell. Our corporate collection is still to come.",
-      "cta": "Discuss your event"
+      "eyebrow": "Ayyaana keessan itti aanu",
+      "title": "Pilaatfoormii biroo.<br></br><em>Xiyyeeffannoo bal'ina walfakkaatu.</em>",
+      "key": "Ayyaana dhaabbataa, waggaa ykn oomsha haaraa karoorfachaa jirtuu? Mee qophii, muuxannoo abbaa qabeenyaa fi seenaa ayyaanni keessan dubbachuu qabu irratti haasa'u. Kolekshinii dhaabbataa keenya dhiyootti dhufa.",
+      "cta": "Ayyaana keessan irratti haasa'aa"
     },
-    "outro": "Every celebration tells a unique story.",
-    "outroCta": "Let’s create yours",
-    "studioCollection": "Studio collection",
-    "fromStudio": "From the studio collection",
-    "visualStudy": "Visual study",
-    "categoryStudy": "{category} · Visual study",
-    "detailsAria": "{title} collection details",
-    "paletteAria": "Collection colour palette",
-    "details": "The details",
-    "exploreGallery": "Explore the gallery",
-    "createPersonal": "Create something personal",
-    "galleryAria": "{title} image and film gallery",
-    "videoFailed": "This film couldn’t load.",
-    "openOriginal": "Open the original film",
-    "tryAgain": "Try again",
-    "noVideo": "Your browser does not support video.",
-    "openFilm": "Open the film.",
-    "previous": "Previous image or film",
-    "next": "Next image or film",
-    "aboutCollection": "About this collection",
+    "outro": "Ayyaanichi hundi seenaa adda ta'e dubbata.",
+    "outroCta": "Kan keessan haa uumnu",
+    "studioCollection": "Kolekshinii iskadiyoo",
+    "fromStudio": "Kolekshinii iskadiyoo irraa",
+    "visualStudy": "Qorannoo suuraa",
+    "categoryStudy": "{category} · Qorannoo suuraa",
+    "detailsAria": "Bal'ina kolekshinii {title}",
+    "paletteAria": "Kolekshinii halluu biftuu",
+    "details": "Bal'ina isaa",
+    "exploreGallery": "Gaalarii sakatta'aa",
+    "createPersonal": "Waan dhuunfaa ta'e tokko uumi",
+    "galleryAria": "Gaalarii suuraa fi viidiyoo {title}",
+    "videoFailed": "Viidiyichi fe'amuu hin dandeenye.",
+    "openOriginal": "Viidiyoo uumamaa banaa",
+    "tryAgain": "Irra deebi'ii yaali",
+    "noVideo": "Browser keessan viidiyoo hin deeggaru.",
+    "openFilm": "Viidiyoo banaa.",
+    "previous": "Suuraa ykn viidiyoo darbe",
+    "next": "Suuraa ykn viidiyoo itti aanu",
+    "aboutCollection": "Waa'ee kolekshinii kanaa",
     "categories": {
-      "all": "All",
-      "weddings": "Weddings",
-      "birthdays": "Birthdays",
-      "corporate": "Corporate Events",
-      "stage": "Stage Decor"
+      "all": "Hundaa",
+      "weddings": "Fuudhaa fi heeruma",
+      "birthdays": "Guyyoota dhalootaa",
+      "corporate": "Ayyaanota dhaabbataa",
+      "stage": "Faaya pilaatfoormii"
     },
     "items": {
       "ivory-and-gold": {
         "title": "Ivory & gold",
-        "subtitle": "Soft florals. A luminous setting.",
-        "coverAlt": "An ivory wedding stage with gold furniture, white floral arrangements and a flower-filled glass walkway.",
-        "description": "An exploration of white-on-white texture, graceful floral forms and the quiet warmth of gold. Draped ceilings and carefully framed focal points turn a room into a setting for a meaningful moment.",
+        "subtitle": "Abaaboo laafaa. Qophii ifaa.",
+        "coverAlt": "Pilaatfoormii fuudhaa ivory meeshaalee warqee, qophii abaaboo adii fi karaa miillaa kiristalli abaaboodhaan guutame wajjin.",
+        "description": "Boca adii-irra-adii, bifa abaaboo miidhagoo fi ho'ina calqabaa warqee qorachuu. Paaladiin uwwifaman fi iddoowwan xiyyeeffannoo of eeggannoodhaan qophaayofaman kutaa tokko gara qophii yeroo hiika qabuutti jijjiiru.",
         "palette": [
           "Ivory",
-          "Warm gold",
-          "Leaf green"
+          "Warqee ho'aa",
+          "Magariisa baala"
         ],
         "details": [
-          "White floral arrangements layered against soft ivory draping.",
-          "Gold accents and repeating architectural frames.",
-          "A related film study of floral arches and illuminated details."
+          "Qophii abaaboo adii kaappilii ivory laafaa irratti tarreeffame.",
+          "Mallattoo warqee fi firaamii aartii irra deddeebi'aman.",
+          "Qorannoo viidiyoo walitti dhufeenya qabu kan gamoowwan abaaboo fi bal'ina ibsame."
         ],
         "media": [
-          "White and gold wedding decor with an elevated stage and floral glass walkway.",
-          "A film study of ivory floral arches, luminous frames and draped event decor."
+          "Faaya fuudhaa adii fi warqee pilaatfoormii olka'aa fi karaa miillaa abaaboodhaan.",
+          "Qorannoo viidiyoo gamoowwan abaaboo ivory, firaamii ifaa fi faaya ayyaanaa uwwifame."
         ]
       },
       "rooted-in-ritual": {
-        "title": "Rooted in ritual",
-        "subtitle": "Heritage, with a contemporary rhythm.",
-        "coverAlt": "Sculptural ivory arches with flowers, warm lights and colourful woven basket details.",
-        "description": "Sculptural arches create a calm architectural backdrop, while woven details bring colour, texture and cultural character. A visual study of how a contemporary setting can hold a deeply familiar feeling.",
+        "title": "Aadaarratti kan hundaa'e",
+        "subtitle": "Aadaa, deemsa ammayyaa wajjin.",
+        "coverAlt": "Gamoowwan ivory abaaboo, ibsaa ho'aa fi bal'ina gaffoo aadaa xaxaman wajjin.",
+        "description": "Gamoowwan boca aartii qaban gadi bu'iinsa aartii tasgabbaa'aa uumu, yeroo bal'inaan xaxaman halluu, bifa fi eenyummaa aadaa fidan. Qorannoo suuraa akka itti qophiin ammayyaa miira baramaa gad fagoo qabaachuu danda'u.",
         "palette": [
           "Chalk",
-          "Woven straw",
+          "Hidoe xaxame",
           "Terracotta"
         ],
         "details": [
-          "Layered ivory arches with warm accent lighting.",
-          "Woven basket details placed among soft floral arrangements.",
-          "A complementary study of woven textures and a coffee ceremony setting."
+          "Gamoowwan ivory walitti qindaa'an ibsaa ho'aa wajjin.",
+          "Bal'ina gaffoo xaxame qophii abaaboo laafaa gidduutti argamu.",
+          "Qorannoo walitti dhufeenya qabu kan bifa xaxamaa fi qophii bunichaa."
         ],
         "media": [
-          "Layered cream arches decorated with warm lights, flowers and colourful woven baskets.",
-          "Woven baskets and pale flowers behind a coffee ceremony setting with white cups."
+          "Gamoowwan kirimi walitti qindaa'an ibsaa ho'aa, abaaboo fi gaffoo xaxaman bifa qabaniin miidhagfaman.",
+          "Gaffoo xaxame fi abaaboo laafaa duubaa qophii sirna bunichaa xcupwaa adii wajjin."
         ]
       },
       "a-softer-celebration": {
-        "title": "A softer celebration",
-        "subtitle": "A little wonder, beautifully imagined.",
-        "coverAlt": "Blush and cream balloons, white arches and floral accents in an intimate celebration setting.",
-        "description": "Blush, cream and a sense of play. Rounded forms, gentle colour and delicate floral accents bring a considered touch to personal celebrations, with space for the smallest details to feel special.",
+        "title": "Ayyaana laafaa",
+        "subtitle": "Dinqii xiqqoo, miidhinaan kan yaadame.",
+        "coverAlt": "Balloon blush fi kirimi, gamoowwan adii fi xiyyeeffannoo abaaboo qophii ayyaana dhuunfaatti.",
+        "description": "Blush, kirimi fi miira tapha. Boca geengoo, halluu laafaa fi xiyyeeffannoo abaaboo laafaa tuqa yaadame ayyaana dhuunfaatiif fida, bakka bal'ina xiqqaaf miira addaa qabaachuuf.",
         "palette": [
           "Blush",
           "Vanilla",
           "Pearl"
         ],
         "details": [
-          "An organic balloon arrangement in warm pastel shades.",
-          "White arches and plinths create a soft, sculptural backdrop.",
-          "A related birthday film explores pink draping and oversized bow details."
+          "Qophii balloon uumamaa bifa paastilii ho'aa keessatti.",
+          "Gamoowwan adii fi piraamidiin hirkata laafaa, bocaa uumu.",
+          "Viidiyoon dhalootaa walitti dhufeenya qabu uwwisa pink fi bal'ina bokiin gurguddoo qorata."
         ],
         "media": [
-          "A pastel balloon arch over an ivory backdrop with white display plinths and floral accents.",
-          "A birthday decor film with pink balloons, a large bow and soft draped details."
+          "Bokiin balloon paastilii gubbaa duubaa ivory piraamidi agarsiisa adii fi xiyyeeffannoo abaaboo wajjin.",
+          "Viidiyoo faaya dhalootaa balloon pink, bokiin gurguddoo fi bal'ina uwwifame laafaa wajjin."
         ]
       },
       "joy-in-full-colour": {
-        "title": "Joy, in full colour",
-        "subtitle": "For the wonderfully expressive moments.",
-        "coverAlt": "A colourful celebration display with a playful balloon arrangement and decorative backdrop.",
-        "description": "A brighter expression of celebration, built around playful colour and generous balloon forms. This study makes room for personality, turning a decorative focal point into part of the occasion’s character.",
+        "title": "Gammachuu, halluu guutuun",
+        "subtitle": "Yeroo ibsaa gammachiisoo ta'aniif.",
+        "coverAlt": "Agarsiisa ayyaana halluu qabu qophii balloon taphaaf mijate fi duubaa miidhaginaa wajjin.",
+        "description": "Ibsa ayyaana ifaa ta'e, halluu taphaaf mijate fi bifa balloon bal'aa irratti kan hundaa'e. Qorannoon kun eenyumummaaf bakka kenna, iddoo xiyyeeffannoo miidhaginaa kutaa amala ayyaanaa taasisa.",
         "palette": [
           "Rose",
           "Butter",
-          "Soft blue"
+          "Blue laafaa"
         ],
         "details": [
-          "A playful mix of balloon colours and scales.",
-          "A decorative backdrop that gives the celebration a focal point.",
-          "An expressive direction for a personal occasion."
+          "Walitti makama tapha balloon halluu fi safartuu.",
+          "Duubaa miidhaginaa kan ayyaanaaf iddoo xiyyeeffannoo kennu.",
+          "Karaan ibsaa ta'e ayyaana dhuunfaatiif."
         ],
         "media": [
-          "A colourful balloon installation framing a decorative celebration backdrop."
+          "Teessoo balloon halluu qabu kan duubaa ayyaana miidhaginaa bocu."
         ]
       }
     }
   },
   "process": {
-    "eyebrow": "Why choose us",
-    "title": "Why choose<br></br><em>Timeless Décor & Events?</em>",
-    "lead": "Elegant ideas, dependable people and a team that stays with you from the first conversation to the final detail.",
+    "eyebrow": "Maaliif nu filattan",
+    "title": "Maaliif <br></br><em>Timeless Décor & Events filattan?</em>",
+    "lead": "Yaadota miidhagoo, namoota amanamoo fi garee marii jalqabaa irraa kaasee haga bal'ina xumuraatti waliin turu.",
     "reasons": [
-      "Professional and experienced team",
-      "Creative and customized designs",
-      "High-quality décor materials",
-      "Affordable packages",
-      "On-time delivery and setup",
-      "Friendly and reliable customer service",
-      "Attention to every detail",
-      "Complete event management solutions"
+      "Garee ogeessa fi muuxannoo qabu",
+      "Boca kalaqaa fi dhuunfaaf mijate",
+      "Meeshaalee faayaa qulqullina olaanaa qaban",
+      "Paakijii gatii madaalawaa",
+      "Yeroo isaa eeganii geessuu fi qopheessuu",
+      "Tajaajila abbaa qabeenyaa michummaa fi amanamaa",
+      "Bal'ina hundaaf xiyyeeffannoo kennuu",
+      "Furmaata bulchiinsa ayyaanaa guutuu"
     ],
-    "bottom": "Every celebration tells a unique story.",
-    "bottomCta": "Begin your story"
+    "bottom": "Ayyaanichi hundi seenaa adda ta'e dubbata.",
+    "bottomCta": "Seenaa keessan jalqabaa"
   },
   "testimonials": {
-    "aria": "Our motto",
-    "eyebrow": "Our motto",
-    "quote": "Creating timeless memories<br></br><em>through elegant celebrations.</em>",
-    "name": "Our motto",
+    "aria": "Motto keenya",
+    "eyebrow": "Motto keenya",
+    "quote": "Yaadannoo bara baraan turu uumuu<br></br><em>ayyaanota bareedoo ta'aniin.</em>",
+    "name": "Motto keenya",
     "role": "Timeless Décor & Events",
-    "clientAria": "Client testimonials",
-    "clientEyebrow": "Words that stay with us",
-    "carouselAria": "Approved client testimonials",
-    "slideAria": "{index} of {total}",
-    "previous": "Previous testimonial",
-    "next": "Next testimonial",
-    "press": "In the press"
+    "clientAria": "Dubbii abbaa qabeenyaa",
+    "clientEyebrow": "Jecha nu biratti hafan",
+    "carouselAria": "Dubbii abbaa qabeenyaa ragga'an",
+    "slideAria": "{index} ka {total}",
+    "previous": "Dubbii abbaa qabeenyaa darbe",
+    "next": "Dubbii abbaa qabeenyaa itti aanu",
+    "press": "Miidiyaa keessatti"
   },
   "contact": {
-    "eyebrow": "Your next chapter",
-    "title": "Every extraordinary event begins with a <em>conversation.</em>",
-    "copy": "Copy inquiry",
-    "callAria": "Call Timeless Décor & Events on 0941097286",
-    "speak": "Speak to our studio",
-    "more": "More ways to reach us",
-    "formEyebrow": "An invitation to imagine",
-    "formLead": "A few details, a world of possibility.",
-    "optional": "(optional)",
-    "summary": "Please check the highlighted fields below.",
-    "name": "Your name",
-    "namePlaceholder": "Full name",
-    "phone": "Phone number",
-    "phonePlaceholder": "Your contact number",
-    "email": "Email address",
+    "eyebrow": "Boqonnaa keessan itti aanu",
+    "title": "Ayyaani adda ta'e hundi <em>marii</em> tokkoon jalqaba.",
+    "copy": "Gaaffii koppii godhi",
+    "callAria": "Timeless Décor & Events 0941097286 irratti bilbilaa",
+    "speak": "Iskadiyoo keenya dubbisi",
+    "more": "Karaalee ittiin nu qabattan biroo",
+    "formEyebrow": "Affeerraa yaaduf",
+    "formLead": "Bal'ina xiqqoo, addunyaa carraawwanii.",
+    "optional": "(dirqama miti)",
+    "summary": "Mee bakkeewwan mallattoo argatan gadii ilaalaa.",
+    "name": "Maqaa keessan",
+    "namePlaceholder": "Maqaa guutuu",
+    "phone": "Lakkoofsa bilbilaa",
+    "phonePlaceholder": "Lakkoofsa bilbilaa keessan",
+    "email": "Teessoo imeelii",
     "emailPlaceholder": "you@example.com",
-    "occasion": "Occasion",
-    "occasionPlaceholder": "Select your occasion",
-    "date": "Preferred date",
-    "guests": "Number of guests",
-    "guestsPlaceholder": "Estimated guest count",
-    "budget": "Budget range",
-    "budgetPlaceholder": "Your preferred range & currency",
-    "venue": "Venue or location",
-    "venuePlaceholder": "A venue, a city, or still deciding",
-    "message": "The feeling you have in mind",
-    "messagePlaceholder": "Tell us about the atmosphere, the details, the moment…",
-    "honeypot": "Leave this field empty",
-    "consent": "I agree that Timeless Décor & Events may contact me about this inquiry.",
-    "manual": "Prepare a manual inquiry",
-    "submitting": "Submitting your inquiry",
-    "send": "Send my inquiry",
-    "prepare": "Prepare my inquiry",
-    "noteDelivery": "Your details will be used to respond to this inquiry. Submitting a request does not confirm a booking.",
-    "noteManual": "Review your inquiry, then choose how to share it. Preparing this form does not send your details.",
-    "deliveryFailed": "Delivery could not be confirmed. Please use the manual contact options.",
-    "deliveryOffline": "Delivery could not be confirmed. Your details are still here; please call the studio or prepare a manual inquiry below.",
-    "reviewEyebrowSent": "A beautiful beginning",
-    "reviewEyebrow": "One step closer",
-    "reviewTitleSent": "Your inquiry has been submitted.",
-    "reviewTitle": "Your vision, ready to share.",
-    "statusSent": "The booking service has accepted your details. Please call the studio if you need to confirm availability.",
-    "statusUnconfirmed": "Your inquiry is ready. Delivery could not be confirmed. Please contact the studio before sending again.",
-    "statusReady": "Your inquiry is ready. It has not been sent.",
-    "reviewLabel": "Your inquiry — select or copy the text",
-    "save": "Save as text",
-    "sms": "Open SMS",
-    "copied": "Copied. You can paste your inquiry into a message.",
-    "selected": "Your inquiry text is selected. Use your device’s Copy command to copy it.",
-    "smsNote": "SMS opens your device’s messaging app. Review the message and send it there when you are ready.",
-    "edit": "Edit details"
+    "occasion": "Ayyaana",
+    "occasionPlaceholder": "Ayyaana keessan filadhaa",
+    "date": "Guyyaa barbaadame",
+    "guests": "Lakkoofsa keessummootaa",
+    "guestsPlaceholder": "Gatii keessummootaa tilmaamame",
+    "budget": "Hamma bajataa",
+    "budgetPlaceholder": "Hamma fi maallaqa barbaaddan",
+    "venue": "Iddoo ykn bakka",
+    "venuePlaceholder": "Iddoo, magaalaa, ykn ammayyuu murteessaa jirtu",
+    "message": "Miira sammuu keessan keessa jiru",
+    "messagePlaceholder": "Haala qilleensaa, bal'ina, yeroo sanas nuuf himaa…",
+    "honeypot": "Bakka kana duwwaa dhiisi",
+    "consent": "Timeless Décor & Events gaaffii kana irratti na qunnamuu danda'uuf walii gala.",
+    "manual": "Gaaffii harkaan hojjetamu qopheessi",
+    "submitting": "Gaaffii keessan dabarsaa jira",
+    "send": "Gaaffii koo ergi",
+    "prepare": "Gaaffii koo qopheessi",
+    "noteDelivery": "Bal'inni keessan gaaffii kanaaf deebii kennuuf ni tajaajila. Gaaffii dhiyeessuun qabxii hin mirkaneessu.",
+    "noteManual": "Gaaffii keessan ilaalaa, itti aansee akkamitti akka qooddan filadhaa. Unka kana qopheessuun bal'ina keessan hin ergu.",
+    "deliveryFailed": "Erguun mirkanaa'uu hin dandeenye. Mee karaa qunnamtii harkaa fayyadamaa.",
+    "deliveryOffline": "Erguun mirkanaa'uu hin dandeenye. Bal'inni keessan asuma jira; mee iskadiyoo bilbilaa ykn gaaffii harkaa gadii qopheessaa.",
+    "reviewEyebrowSent": "Jalqabbii miidhaginaa",
+    "reviewEyebrow": "Tarkaanfii tokko dhihaate",
+    "reviewTitleSent": "Gaaffiin keessan dhiyaateera.",
+    "reviewTitle": "Mul'ata keessan, qooduuf qophiidha.",
+    "statusSent": "Tajaajilli qabxii bal'ina keessan fudhateera. Argamuu mirkaneessuun barbaachisaa yoo ta'e iskadiyoo bilbilaa.",
+    "statusUnconfirmed": "Gaaffiin keessan qophiidha. Erguun mirkanaa'uu hin dandeenye. Erguu irra deebi'uu keessan dura iskadiyoo qunnamaa.",
+    "statusReady": "Gaaffiin keessan qophiidha. Hin ergame.",
+    "reviewLabel": "Gaaffii keessan — barreeffama filadhaa ykn koppii godhi",
+    "save": "Akka barreeffamaatti olkaa'i",
+    "sms": "SMS banaa",
+    "copied": "Koppii ta'eera. Gaaffii keessan ergaatti paste gochuu dandeessa.",
+    "selected": "Barreeffamni gaaffii keessan filameera. Koppii gochuuf ajaja copy meeshichaa fayyadami.",
+    "smsNote": "SMS madda ergaa meeshichaa bana. Ergaa sana ilaalaa yeroo qophii taatan achitti ergaa.",
+    "edit": "Bal'ina sirreessi"
   },
   "eventTypes": {
-    "Weddings": "Weddings",
-    "Birthdays": "Birthdays",
-    "Graduations": "Graduations",
+    "Weddings": "Fuudhaa fi heeruma",
+    "Birthdays": "Guyyoota dhalootaa",
+    "Graduations": "Eebba",
     "Baby Showers": "Baby Showers",
-    "Engagements": "Engagements",
-    "Corporate Events": "Corporate Events",
-    "Other": "Other"
+    "Engagements": "Kaadhimama",
+    "Corporate Events": "Ayyaanota dhaabbataa",
+    "Other": "Biroo"
   },
   "contactPanel": {
-    "title": "Contact Timeless Décor & Events",
-    "eyebrow": "Contact us",
-    "heading": "Let’s create<br></br><em>something timeless.</em>",
-    "lead": "Call, message or send us your idea. We’ll answer every celebration with the same care.",
-    "call": "Call",
-    "mainLine": "Main line",
-    "studio": "Studio",
-    "followUs": "Follow us",
-    "opensNewTab": "opens in a new tab"
+    "title": "Timeless Décor & Events qunnaamaa",
+    "eyebrow": "Nu qunnamaa",
+    "heading": "Haa uumnu<br></br><em>waan bara baraan turu.</em>",
+    "lead": "Bilbilaa, ergaa ergaa ykn yaada keessan nuuf ergaa. Ayyaana hundaaf kunuunsa walfakkaatuun deebii kennina.",
+    "call": "Bilbilaa",
+    "mainLine": "Sarara ijoo",
+    "studio": "Iskadiyoo",
+    "followUs": "Nu hordofaa",
+    "opensNewTab": "tab haaraa irratti bana"
   },
   "footer": {
-    "navLabel": "Footer navigation",
-    "about": "About us",
-    "services": "Our services",
-    "work": "Our work",
-    "why": "Why choose us",
-    "contact": "Begin a conversation",
-    "message": "Creating timeless<br></br>memories through <em>elegant celebrations.</em>",
-    "logoLabel": "Timeless Décor & Events, back to top",
-    "backToTop": "BACK TO TOP",
+    "navLabel": "Karoora footer",
+    "about": "Waa'ee keenya",
+    "services": "Tajaajiloota keenya",
+    "work": "Hojii keenya",
+    "why": "Maaliif nu filattan",
+    "contact": "Marii jalqabaa",
+    "message": "Ayyaanota bareedoo ta'aniin<br></br><em>yaadannoo bara baraan turu uumuu.</em>",
+    "logoLabel": "Timeless Décor & Events, gara oliitti deebi'i",
+    "backToTop": "GARAA OLIITTI DEEBI'I",
     "rights": "© {year} TIMELESS DÉCOR & EVENTS",
-    "privacy": "Privacy & inquiries",
-    "privacyTitle": "Privacy and inquiries",
-    "privacyEyebrow": "A NOTE ON YOUR DETAILS",
-    "privacyHeading": "Privacy &<br></br><em>inquiries.</em>",
-    "privacy1": "The inquiry form uses the details you provide to prepare your event request. If online delivery is available, choosing to send forwards those details to the studio’s configured inquiry service. Otherwise, you choose whether to copy, download or share the prepared message by SMS.",
-    "privacy2": "Preparing a message alone does not send it. Opening an SMS draft does not send it either; your messaging app asks you to complete that step. Your carrier’s usual messaging charges may apply.",
-    "privacy3": "This website does not include advertising trackers or an analytics service. Fonts and décor media are served with the website. Your browser and the website host still exchange the technical information required to load pages.",
-    "privacy4": "For questions about information you have shared, contact Timeless Décor & Events on <phone>{phone}</phone>."
+    "privacy": "Iccitii fi gaaffiiwwan",
+    "privacyTitle": "Iccitii fi gaaffiiwwan",
+    "privacyEyebrow": "YAADA BAL'INA KEESSAN IRRAATTI",
+    "privacyHeading": "Iccitii fi<br></br><em>gaaffiiwwan.</em>",
+    "privacy1": "Unki gaaffii gaaffii ayyaana keessan qopheessuuf bal'ina dhiyeessitan fayyadama. Erguun marsariitii irraa yoo jiraate, erguuf filachuun bal'ina sana tajaajila gaaffii iskadiyootii qindaa'eef dabarsa. Yoo ta'uu baate garuu, ergaa qophaa'e SMS dhaan koppii gochuu, buufachuu ykn qooduu ni filatta.",
+    "privacy2": "Ergaa qofa qopheessuun hin ergu. Tarra ergaa SMS banuunis hin ergu; madda ergaa keessan tarkaanfii sana akka xumurtan isin gaafata. Kaffaltiin ergaa dhabuun tajaajila keessanii irratti hundaa'uu danda'a.",
+    "privacy3": "Marsariitiin kun trackers gabaasaa ykn tajaajila xiinxalaati hin qabatu. Fonti fi miidiyaan faayaa marsariitichaa wajjin dhiyaatu. Browser keessan fi host marsariitichaa odeeffannoo teeknikaa fuula fe'uuf barbaachisu ni jijjiirru.",
+    "privacy4": "Odeeffannoo qooddan irratti gaaffii yoo qabaattan, Timeless Décor & Events <phone>{phone}</phone> irratti qunnamaa."
   },
   "errors": {
-    "eyebrow": "A BRIEF INTERLUDE",
-    "title": "Let’s try<br></br><em>that again.</em>",
-    "text": "Something interrupted the page. Your celebration can still begin with a call to <phone>{phone}</phone>.",
-    "reload": "Reload this view",
+    "eyebrow": "BOQONNAA GABAABAA",
+    "title": "Mee irra deebi'uu<br></br><em>yaalla.</em>",
+    "text": "Wanni fuula tuqe jira. Ayyaani keessan ammayyuu <phone>{phone}</phone> irratti bilbiluudhaan jalqabamuu danda'a.",
+    "reload": "Ilaalcha kana irra deebi'ii fe'i",
     "notFoundEyebrow": "TIMELESS · 404",
-    "notFoundTitle": "A different<br></br><em>kind of detour.</em>",
-    "notFoundText": "This page has moved, or its story is still to be written.",
-    "notFoundCta": "Return to Timeless"
+    "notFoundTitle": "Fageenya bifa<br></br><em>biroo.</em>",
+    "notFoundText": "Fuulli kun socho'eera, ykn seenaan isaa ammayyuu barreeffamuu qaba.",
+    "notFoundCta": "Gara Timeless deebi'i"
   }
 }

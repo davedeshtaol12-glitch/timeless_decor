@@ -1,23 +1,23 @@
 {
   "_translatorNote": "Replace each English value with its Amharic translation. Keep the keys, {placeholders} and <tags> exactly as they are. Any value left in English (or deleted) falls back to English automatically.",
   "meta": {
-    "title": "Timeless Décor & Events — Creating Timeless Memories for Every Celebration",
-    "titleTemplate": "%s | Timeless Décor & Events",
-    "description": "A full-service event decoration and planning company. Weddings, birthdays, graduations, baby showers, engagements and corporate events. Call 0941097286.",
-    "ogTitle": "Timeless Décor & Events",
-    "tagline": "Creating Timeless Memories for Every Celebration",
-    "ogImageAlt": "Ivory and gold décor by Timeless"
+    "title": "ታይምለስ ዴኮር እና ኢቨንትስ — ለዕድሜ ልክ ትውስታ የሚሆኑ የማይረሱ አከባብሮች",
+    "titleTemplate": "%s | ታይምለስ ዴኮር እና ኢቨንትስ",
+    "description": "ሙሉ አገልግሎት የሚሰጥ የክንዋኔዎች (ኢቨንት) ማስጌጥ እና እቅድ ድርጅት። ሰርግ፣ የልደት በዓላት፣ የምረቃ መርሐ-ግብሮች፣ የሕፃናት መናፍቅ (ቤቢ ሻወር)፣ የእጮኝነት እና የድርጅት ስብሰባዎች። በስልክ ቁጥር 0941097286 ይደውሉ።",
+    "ogTitle": "ታይምለስ ዴኮር እና ኢቨንትስ",
+    "tagline": "ለዕድሜ ልክ ትውስታ የሚሆኑ የማይረሱ አከባብሮች",
+    "ogImageAlt": "በታይምለስ የተዘጋጀ የዕንቁላል ነጭ እና ወርቃማ ዴኮር"
   },
   "common": {
-    "skipToContent": "Skip to content",
-    "closeDialog": "Close dialog",
-    "noscript": "For gallery films and the inquiry form, enable JavaScript. You can always call",
-    "motto": "Creating Timeless Memories Through Elegant Celebrations.",
-    "brand": "Timeless Décor & Events",
-    "callStudio": "Call the studio"
+    "skipToContent": "ወደ ዋናው ይዘት ይለፉ",
+    "closeDialog": "ንግግሩን ዝጋ",
+    "noscript": "የጋለሪ ቪዲዮዎችን እና የጥያቄ ቅጹን ለማየት ጃቫስክሪፕት (JavaScript) ያስችሉ። ሁልጊዜም መደወል ይችላሉ",
+    "motto": "በሚያምር አከባበር የማይረሱ ትውስታዎችን እንፈጥራለን።",
+    "brand": "ታይምለስ ዴኮር እና ኢቨንትስ",
+    "callStudio": "ለስቱዲዮው ይደውሉ"
   },
   "language": {
-    "label": "Language",
+    "label": "ቋንቋ",
     "en": "English",
     "am": "አማርኛ",
     "om": "Afaan Oromoo",
@@ -28,505 +28,505 @@
     }
   },
   "header": {
-    "logoAlt": "Timeless Décor and Event Planners",
-    "homeLabel": "Timeless Décor & Events, home",
-    "note": "Creating timeless memories",
-    "contactUs": "Contact us",
-    "menu": "Menu"
+    "logoAlt": "ታይምለስ ዴኮር እና ኢቨንት ፕላነርስ",
+    "homeLabel": "ታይምለስ ዴኮር እና ኢቨንትስ፣ መነሻ ገጽ",
+    "note": "የማይረሱ ትውስታዎችን እንፈጥራለን",
+    "contactUs": "ያግኙን",
+    "menu": "ማውጫ"
   },
   "menu": {
-    "title": "Explore Timeless",
-    "navLabel": "Main navigation",
-    "overline": "TIMELESS DÉCOR & EVENTS",
+    "title": "ታይምለስን ያስሱ",
+    "navLabel": "ዋና ማውጫ",
+    "overline": "ታይምለስ ዴኮር እና ኢቨንትስ",
     "links": {
-      "home": "The beginning",
-      "reel": "The reel",
-      "about": "About us",
-      "services": "Our services",
-      "work": "Our work",
-      "why": "Why choose us",
-      "contact": "Contact us"
+      "home": "መነሻው",
+      "reel": "የቪዲዮ እይታ",
+      "about": "ስለ እኛ",
+      "services": "አገልግሎቶቻችን",
+      "work": "ሥራዎቻችን",
+      "why": "ለምን እኛን መረጡ",
+      "contact": "ያግኙን"
     },
-    "conversation": "A CONVERSATION AWAY",
-    "quote": "Creating timeless<br></br>memories through <em>elegant celebrations.</em>"
+    "conversation": "አንድ ውይይት ብቻ ይቀራል",
+    "quote": "በሚያምር አከባበር<br></br><em>የማይረሱ ትውስታዎችን እንፈጥራለን።</em>"
   },
   "hero": {
-    "aria": "The art of celebration",
-    "eyebrow": "TIMELESS DÉCOR & EVENTS",
-    "title": "Creating timeless<br></br><em>memories.</em>",
-    "description": "Elegant, creative and personalized celebrations,<br></br>from concept to completion.",
-    "cta": "Begin your celebration",
-    "sideNote": "WEDDINGS · BIRTHDAYS · GRADUATIONS · CORPORATE EVENTS",
-    "scrollCue": "SCROLL TO<br></br>DISCOVER",
-    "chapters": "Choose a visual chapter",
-    "viewSlide": "View {label}",
-    "stepInside": "STEP INSIDE",
-    "pause": "Pause background film",
-    "play": "Play background film",
-    "filmTitle": "Step inside: {label}",
-    "filmEyebrow": "TIMELESS DÉCOR & EVENTS · {label}",
-    "filmAria": "{label}: a silent décor film",
-    "filmError": "The film could not load.",
-    "openOriginal": "Open the original film",
-    "noVideo": "Your browser does not support this film.",
-    "openMedia": "Open the media",
-    "stripLabel": "Celebrations we design",
+    "aria": "የአከባበር ጥበብ",
+    "eyebrow": "ታይምለስ ዴኮር እና ኢቨንትስ",
+    "title": "የማይረሱ<br></br><em>ትውስታዎችን እንፈጥራለን።</em>",
+    "description": "ከሃሳብ መነሻ እስከ ፍጻሜው ድረስ ያማሩ፣ የፈጠራ ስራዎች የተሞሉ እና ግላዊነት የተላበሱ አከባብሮች።",
+    "cta": "ክብረ በዓልዎን ይጀምሩ",
+    "sideNote": "ሰርግ · ልደት · ምረቃ · የድርጅት መርሐ-ግብሮች",
+    "scrollCue": "ለማግኘት<br></br>ወደ ታች ይሸብልሉ",
+    "chapters": "የምስል ምዕራፍ ይምረጡ",
+    "viewSlide": "{label} ይመልከቱ",
+    "stepInside": "ውስጥ ገብተው ይጎብኙ",
+    "pause": "የጀርባ ፊልሙን አቁም",
+    "play": "የጀርባ ፊልሙን አጫውት",
+    "filmTitle": "ውስጥ ገብተው ይጎብኙ፡ {label}",
+    "filmEyebrow": "ታይምለስ ዴኮር እና ኢቨንትስ · {label}",
+    "filmAria": "{label}፡ ድምፅ የሌለው የዲኮር ፊልም",
+    "filmError": "ፊልሙ ሊጫን አልቻለም።",
+    "openOriginal": "ኦሪጅናል ፊልሙን ክፈት",
+    "noVideo": "አሳሽዎ (Browser) ይህንን ፊልም አይደግፍም።",
+    "openMedia": "ሚዲያውን ክፈት",
+    "stripLabel": "የምናዘጋጅላቸው ክብረ በዓላት",
     "strip": {
-      "weddings": "Weddings",
-      "birthdays": "Birthdays",
-      "graduations": "Graduations & baby showers",
-      "corporate": "Corporate events"
+      "weddings": "ሰርግ",
+      "birthdays": "የልደት በዓላት",
+      "graduations": "ምረቃ እና የሕፃናት መናፍቅ",
+      "corporate": "የድርጅት መርሐ-ግብሮች"
     },
     "slides": {
       "ivory": {
-        "label": "Ivory & gold",
-        "caption": "A study in light, texture and quiet grandeur.",
-        "alt": "White floral arches and candlelit details in an ivory event setting"
+        "label": "ዕንቁላል ነጭ እና ወርቃማ (Ivory & gold)",
+        "caption": "የብርሃን፣ የይዘት እና የተረጋጋ ግርማ ጥናት።",
+        "alt": "በዕንቁላል ነጭ አከባበር ውስጥ ነጭ የአበባ ቅስቶች እና በሻማ የተብራሩ ዝርዝሮች"
       },
       "ritual": {
-        "label": "Rooted in ritual",
-        "caption": "Thoughtful details. A beautiful sense of belonging.",
-        "alt": "Traditional woven baskets with white and blush floral accents"
+        "label": "በባህላዊ ስነ-ስርዓት ላይ የተመሰረተ",
+        "caption": "አስተሳሰብን የሚነኩ ዝርዝሮች። ውብ የሆነ የማንነት ስሜት።",
+        "alt": "ከነጭ እና ከለስላሳ ሮዝ አበባዎች ጋር የተሰሩ ባህላዊ የተጠለፉ ቅርጫቶች"
       },
       "blush": {
-        "label": "In full bloom",
-        "caption": "A little wonder. A world of possibility.",
-        "alt": "A pink balloon celebration with a sculptural bow and table setting"
+        "label": "በሙሉ ውበት የፈካ",
+        "caption": "ትንሽ ድንቅ ነገር። የዕድሎች ዓለም።",
+        "alt": "በቅርጻ ቅርጽ ቀስት እና በጠረጴዛ ዝግጅት የታጀበ የሮዝ አሻንጉሊት (ബಲೂን) ክብረ በዓል"
       }
     }
   },
   "reel": {
-    "aria": "A reel of recent celebrations",
-    "heading": "A reel of recent celebrations",
-    "cta": "Begin your celebration",
-    "hint": "Scroll to explore",
-    "cursor": "Scroll",
-    "soundOn": "Turn film sound off",
-    "soundOff": "Turn film sound on",
-    "on": "ON",
-    "off": "OFF",
-    "credit": "Timeless Décor",
-    "creditSuffix": "and Event",
+    "aria": "የቅርብ ጊዜ ክብረ በዓላት ቪዲዮ እይታ",
+    "heading": "የቅርብ ጊዜ ክብረ በዓላት ቪዲዮ እይታ",
+    "cta": "ክብረ በዓልዎን ይጀምሩ",
+    "hint": "ለማሰስ ይሸብልሉ",
+    "cursor": "ሸብልል",
+    "soundOn": "የፊልሙን ድምፅ አጥፋ",
+    "soundOff": "የፊልሙን ድምፅ አብራ",
+    "on": "አብራ",
+    "off": "አጥፋ",
+    "credit": "ታይምለስ ዴኮር",
+    "creditSuffix": "እና ኢቨንት",
     "panels": {
       "ivory": {
-        "label": "Ivory & gold",
-        "caption": "A study in light, texture and quiet grandeur.",
-        "alt": "White floral arches and candlelit details in an ivory event setting"
+        "label": "ዕንቁላል ነጭ እና ወርቃማ (Ivory & gold)",
+        "caption": "የብርሃን፣ የይዘት እና የተረጋጋ ግርማ ጥናት።",
+        "alt": "በዕንቁላል ነጭ አከባበር ውስጥ ነጭ የአበባ ቅስቶች እና በሻማ የተብራሩ ዝርዝሮች"
       },
       "wedding": {
-        "label": "The wedding",
-        "caption": "Vows beneath a canopy of blooms.",
-        "alt": "A wedding ceremony dressed in florals"
+        "label": "ሰርጉ",
+        "caption": "በአበባ ጉንጉን ስር የተደረጉ ኪዳኖች።",
+        "alt": "በአበባ ያጌጠ የሰርግ ስነ-ስርዓት"
       },
       "ritual": {
-        "label": "Rooted in ritual",
-        "caption": "Thoughtful details. A beautiful sense of belonging.",
-        "alt": "Traditional woven baskets with white and blush floral accents"
+        "label": "በባህላዊ ስነ-ስርዓት ላይ የተመሰረተ",
+        "caption": "አስተሳሰብን የሚነኩ ዝርዝሮች። ውብ የሆነ የማንነት ስሜት።",
+        "alt": "ከነጭ እና ከለስላሳ ሮዝ አበባዎች ጋር የተሰሩ ባህላዊ የተጠለፉ ቅርጫቶች"
       },
       "blush": {
-        "label": "In full bloom",
-        "caption": "A little wonder. A world of possibility.",
-        "alt": "A pink balloon celebration with a sculptural bow and table setting"
+        "label": "በሙሉ ውበት የፈካ",
+        "caption": "ትንሽ ድንቅ ነገር። የዕድሎች ዓለም።",
+        "alt": "በቅርጻ ቅርጽ ቀስት እና በጠረጴዛ ዝግጅት የታጀበ የሮዝ አሻንጉሊት (ബಲೂን) ክብረ በዓል"
       },
       "stage": {
-        "label": "The stage",
-        "caption": "Spaces designed to be felt.",
-        "alt": "A sculpted stage design"
+        "label": "መድረኩ",
+        "caption": "እንዲሰሙ ተደርጎ የተነደፉ ቦታዎች።",
+        "alt": "ቅርጽ የተሰጠው የመድረክ ዲዛይን"
       },
       "soiree": {
-        "label": "Private soirée",
-        "caption": "An evening, beautifully imagined.",
-        "alt": "A candlelit private soirée table"
+        "label": "ግላዊ ድግስ",
+        "caption": "በውብ ሁኔታ የታሰበ ምሽት።",
+        "alt": "በሻማ የተብራራ የግል ድግስ ጠረጴዛ"
       },
       "celebration": {
-        "label": "Celebration",
-        "caption": "Joy, composed with care.",
-        "alt": "A joyful celebration setting"
+        "label": "ክብረ በዓል",
+        "caption": "በጥንቃቄ የተዘጋጀ ደስታ።",
+        "alt": "ደስ የሚል የአከባበር ሁኔታ"
       },
       "gala": {
-        "label": "The gala",
-        "caption": "Grand rooms. Quiet details.",
-        "alt": "A gala dinner arranged with floral centrepieces"
+        "label": "የጋላ ምሽት",
+        "caption": "ታላላቅ ክፍሎች። የተረጋጉ ዝርዝሮች።",
+        "alt": "በአበባ ማዕከሎች የተዘጋጀ የጋላ እራት"
       }
     }
   },
   "story": {
-    "overline": "01 / ABOUT US",
-    "overlineEnd": "CREATING TIMELESS MEMORIES",
-    "title": "Ordinary occasions,<br></br><em>unforgettable<br></br> celebrations.</em>",
-    "lead": "Timeless Décor & Events is a full-service event decoration and planning company dedicated to transforming ordinary occasions into unforgettable celebrations.",
-    "body": "We specialize in designing elegant, creative and personalized event experiences that reflect each client’s unique vision and style. Whether it’s an intimate family gathering or a grand celebration, our experienced team delivers exceptional décor, flawless coordination and outstanding customer service from concept to completion.",
-    "link": "Explore our services",
-    "footnote": "ELEGANT. CREATIVE. PERSONALIZED.",
-    "mainImageAlt": "An abundant composition of white flowers with an ivory event setting beyond",
-    "detailImageAlt": "Woven Ethiopian basket details with delicate floral accents",
+    "overline": "01 / ስለ እኛ",
+    "overlineEnd": "የማይረሱ ትውስታዎችን መፍጠር",
+    "title": "የተለመዱ ጊዜያት፣<br></br><em>የማይረሱ<br></br> ክብረ በዓላት።</em>",
+    "lead": "ታይምለስ ዴኮር እና ኢቨንትስ የተለመዱ ጊዜያትን ወደ የማይረሱ ክብረ በዓላት ለመቀየር የተቋቋመ ሙሉ አገልግሎት የሚሰጥ የክንዋኔዎች ማስጌጥ እና እቅድ ድርጅት ነው።",
+    "body": "የእያንዳንዱን ደንበኛ ልዩ ራዕይ እና ዘይቤ የሚያንፀባርቁ ውብ፣ የፈጠራ እና ግላዊ የሆኑ የክንዋኔ ልምዶችን በመንደፍ ላይ እንተጋለን። የቤተሰብ መቀራረቢያ ስብሰባ ይሁን ታላቅ ክብረ በዓል፣ ልምድ ያለው ቡድናችን ከሃሳብ መነሻ እስከ ፍጻሜው ድረስ ልዩ ዴኮር፣ እንከን የለሽ አስተባባሪነት እና ድንቅ የደንበኛ አገልግሎት ይሰጣል።",
+    "link": "አገልግሎቶቻችንን ያስሱ",
+    "footnote": "ያማረ። የፈጠራ። ግላዊ የሆነ።",
+    "mainImageAlt": "ከኋላው ካለው የዕንቁላል ነጭ የክብረ በዓል አቀማመጥ ጋር የተትረፈረፈ ነጭ አበባዎች ቅንብር",
+    "detailImageAlt": "ከተለዩ የአበባ ማስጌጫዎች ጋር የኢትዮጵያ ባህላዊ የተጠለፉ ቅርጫት ዝርዝሮች",
     "pillars": [
       {
-        "title": "Our vision",
-        "text": "To become the leading event décor and planning company, recognized for creativity, quality, innovation and excellence in delivering memorable celebrations."
+        "title": "ራዕያችን",
+        "text": "በፈጠራ ስራ፣ በጥራት፣ በחדות (innovation) እና የማይረሱ ክብረ በዓላትን በማቅረብ የነጻነት እና የዕውቅና ባለቤት የሆነ ቀዳሚ የክንዋኔ ዴኮር እና እቅድ ድርጅት መሆን።"
       },
       {
-        "title": "Our mission",
-        "text": "To provide high-quality, professional, reliable and affordable event solutions, creating beautiful, memorable experiences and exceeding expectations through creativity and attention to detail."
+        "title": "ተልእኳችን",
+        "text": "ከፍተኛ ጥራት ያላቸው፣ ፕሮፌሽናል፣ ታማኝ እና ተመጣጣኝ የክንዋኔ መፍትሄዎችን በማቅረብ፣ ውብ እና የማይረሱ ልምዶችን መፍጠር እንዲሁም በፈጠራ እና ለዝርዝሮች ትኩረት በመስጠት ከሚጠበቀው በላይ ማድረስ።"
       },
       {
-        "title": "Our commitment",
-        "text": "Every celebration tells a unique story. We transform your vision into reality with elegant décor, creative designs and seamless execution, beautiful, stress-free and truly unforgettable."
+        "title": "ቁርጠኝነታችን",
+        "text": "እያንዳንዱ ክብረ በዓል ልዩ ታሪክን ይናገራል። ራዕይዎን በማማረ ዴኮር፣ በፈጠራ ዲዛይኖች እና እንከን የለሽ አፈጻጸም፣ ውብ፣ ከጭንቀት ነጻ እና በእርግጥም የማይረሳ በማድረግ ወደ እውነታ እንለውጣለን።"
       },
       {
-        "title": "Our core values",
-        "text": "Excellence · Creativity · Professionalism · Integrity · Customer satisfaction · Innovation · Teamwork."
+        "title": "ዋና እሴቶቻችን",
+        "text": "ልህቀት · የፈጠራ ችሎታ · პროፌሽናልነት · ታማኝነት · የደንበኛ እርካታ · חדות (አዲስ ፈጠራ) · የቡድን ስራ።"
       }
     ]
   },
   "services": {
-    "overline": "02 / OUR SERVICES",
-    "overlineEnd": "FROM CONCEPT TO COMPLETION",
-    "title": "Every celebration,<br></br><em>beautifully dressed.</em>",
-    "intro": "From intimate gatherings to grand occasions, we design, style and deliver the setting for your day.",
-    "link": "Plan your event",
-    "scoreLabel": "At a glance",
-    "scoreAria": "Service summary for {title}",
-    "offerings": "{count, plural, one {offering} other {offerings}}",
-    "catalogueShare": "Share of our full catalogue",
-    "includes": "Includes",
-    "hoverHint": "Hover or focus a service to see its summary.",
+    "overline": "02 / አገልግሎቶቻችን",
+    "overlineEnd": "ከሃሳብ መነሻ እስከ ፍጻሜው",
+    "title": "እያንዳንዱ ክብረ በዓል፣<br></br><em>በውበት የተዋበ።</em>",
+    "intro": "ከቅርብ ስብሰባዎች እስከ ታላላቅ አጋጣሚዎች፣ ለቀንዎ የሚሆን ቦታ እንነድፋለን፣ እናስተካክላለን እናቀርባለንም።",
+    "link": "ክብረ በዓልዎን ያቅዱ",
+    "scoreLabel": " በአጭሩ",
+    "scoreAria": "ለ {title} የአገልግሎት ማጠቃለያ",
+    "offerings": "{count, plural, one {አገልግሎት} other {አገልግሎቶች}}",
+    "catalogueShare": "የሙሉ ካታሎጋችን ድርሻ",
+    "includes": "የያዘው",
+    "hoverHint": "ማጠቃለያውን ለማየት በአገልግሎቱ ላይ ያንዣብቡ ወይም ትኩረት ይስጡ።",
     "groups": {
       "wedding": {
-        "title": "Wedding decoration",
+        "title": "የሰርግ ዴኮር",
         "items": [
-          "Wedding stage design",
-          "Floral arrangements",
-          "Reception décor",
-          "Bridal table decoration",
-          "Church and outdoor wedding décor"
+          "የሰርግ መድረክ ዲዛይን",
+          "የአበባ ዝግጅቶች",
+          "የእንግዳ መቀበያ ዴኮር",
+          "የሙሽሮች ጠረጴዛ ማስጌጫ",
+          "የቤተክርስቲያን እና ከቤት ውጭ የሰርግ ዴኮር"
         ]
       },
       "birthday": {
-        "title": "Birthday decoration",
+        "title": "የልደት ዴኮር",
         "items": [
-          "Children’s birthday parties",
-          "Adult birthday celebrations",
-          "Theme-based birthday setups",
-          "Balloon decorations",
-          "Dessert and cake tables"
+          "የሕፃናት ልደት ድግሶች",
+          "የጎልማሶች ልደት አከባብሮች",
+          "በርዕሰ-ጉዳይ (Theme-based) ላይ የተመሰረቱ የልደት ዝግጅቶች",
+          "የአሻንጉሊት (ബಲೂን) ማስጌጫዎች",
+          "የጣፋጭ እና ኬክ ጠረጴዛዎች"
         ]
       },
       "graduation": {
-        "title": "Graduation decoration",
+        "title": "የምረቃ ዴኮር",
         "items": [
-          "Graduation party décor",
-          "Photo booth setup",
-          "Stage decoration",
-          "Customized backdrops"
+          "የምረቃ ድግስ ዴኮር",
+          "የፎቶ ማዕከል (Photo booth) ዝግጅት",
+          "የመድረክ ማስጌጫ",
+          "ብጁ የጀርባ ምስሎች (Backdrops)"
         ]
       },
       "babyShower": {
-        "title": "Baby shower decoration",
+        "title": "የሕፃናት መናፍቅ (Baby shower) ዴኮር",
         "items": [
-          "Elegant baby shower themes",
-          "Gender reveal decoration",
-          "Balloon garlands",
-          "Table styling",
-          "Welcome signage"
+          "ያማሩ የቤቢ ሻወር ጭብጦች",
+          "የጾታ ማስታወቂያ (Gender reveal) ዴኮር",
+          "የአሻንጉሊት ጉንጉኖች",
+          "የጠረጴዛ አቀማመጥ",
+          "የእንኳን ደህና መጡ ምልክቶች"
         ]
       },
       "engagement": {
-        "title": "Engagement decoration",
+        "title": "የእጮኝነት ዴኮር",
         "items": [
-          "Romantic engagement setups",
-          "Proposal decoration",
-          "Family engagement ceremonies",
-          "Floral and lighting arrangements"
+          "የፍቅር እጮኝነት ዝግጅቶች",
+          "የመጠየቂያ (Proposal) ዴኮር",
+          "የቤተሰብ እጮኝነት ስነ-ስርዓቶች",
+          "የአበባ እና የብርሃን ዝግጅቶች"
         ]
       },
       "corporate": {
-        "title": "Corporate events & anniversaries",
+        "title": "የድርጅት መርሐ-ግብሮች እና ዓመታዊ በዓላት",
         "items": [
-          "Corporate anniversary celebrations",
-          "Office decoration",
-          "Award ceremonies",
-          "Product launches",
-          "Conferences and seminars"
+          "የድርጅት ዓመታዊ በዓላት አከባበር",
+          "የቢሮ ማስጌጫ",
+          "የሽልማት ስነ-ስርዓቶች",
+          "የምርት  lançamento (ይፋ ማድረጊያዎች)",
+          "ኮንፈረንሶች እና ሴሚናሮች"
         ]
       },
       "other": {
-        "title": "Other events",
+        "title": "ሌሎች መርሐ-ግብሮች",
         "items": [
-          "Bridal showers",
-          "Anniversaries",
-          "Baptisms",
-          "Holiday parties",
-          "Cultural celebrations",
-          "Family gatherings",
-          "Private events",
-          "Event rentals and styling"
+          "የሙሽራ ድግሶች (Bridal showers)",
+          "ዓመታዊ በዓላት",
+          "ጥምቀቶች",
+          "የበዓል ድግሶች",
+          "የባህል ክብረ በዓላት",
+          "የቤተሰብ ስብሰባዎች",
+          "ግላዊ መርሐ-ግብሮች",
+          "የክንዋኔ ኪራዮች እና ስታይሊንግ"
         ]
       }
     }
   },
   "portfolio": {
-    "eyebrow": "Our work",
-    "title": "A world of<br></br><em>possibilities.</em>",
-    "aside": "A glimpse of the celebrations we have dressed, from elegant weddings to joyful birthdays and stage décor.",
-    "discover": "Discover the collection",
-    "filtersLabel": "Filter portfolio collections",
-    "filterCount": "{count} collections",
-    "shown": "{count, plural, one {# collection} other {# collections}} shown",
-    "shownIn": "{count, plural, one {# collection} other {# collections}} shown in {category}",
-    "openGallery": "Open {title} gallery",
-    "studies": "{count, plural, one {# study} other {# studies}}",
-    "viewGallery": "View gallery",
-    "watchFilm": "Watch film",
-    "watchFilmAria": "Watch {title} film",
-    "exploreCollection": "Explore {title} collection",
+    "eyebrow": "ሥራዎቻችን",
+    "title": "የዕድሎች<br></br><em>ዓለም።</em>",
+    "aside": "ከሚያምሩ ሰርጎች እስከ አስደሳች ልደቶች እና የመድረክ ዴኮር ድረስ ያስጌጥናቸው ክብረ በዓላት ማሳያ።",
+    "discover": "ስብስቡን ያስሱ",
+    "filtersLabel": "የፖርትፎሊዮ ስብስቦችን አጣራ",
+    "filterCount": "{count} ስብስቦች",
+    "shown": "{count, plural, one {# ስብስብ} other {# ስብስቦች}} ታይተዋል",
+    "shownIn": "በ {category} ስር {count, plural, one {# ስብስብ} other {# ስብስቦች}} ታይተዋል",
+    "openGallery": "የ {title} ጋለሪ ክፈት",
+    "studies": "{count, plural, one {# ጥናት} other {# ጥናቶች}}",
+    "viewGallery": "ጋለሪውን ይመልከቱ",
+    "watchFilm": "ፊልሙን ይመልከቱ",
+    "watchFilmAria": "የ {title} ፊልም ይመልከቱ",
+    "exploreCollection": "የ {title} ስብስብ ያስሱ",
     "empty": {
-      "eyebrow": "Your next occasion",
-      "title": "A different stage.<br></br><em>The same attention to detail.</em>",
-      "text": "Planning a corporate event, anniversary or product launch? Let’s discuss the setting, the guest experience and the story your event should tell. Our corporate collection is still to come.",
-      "cta": "Discuss your event"
+      "eyebrow": "የሚቀጥለው አጋጣሚዎ",
+      "title": "ልዩ መድረክ።<br></br><em>ተመሳሳይ ለዝርዝሮች ትኩረት።</em>",
+      "thought": "የድርጅት መርሐ-ግብር፣ ዓመታዊ በዓል ወይም የምርት ይፋ ማድረጊያ እያቀዱ ነው? ስለ አቀማመጡ፣ የእንግዳው ልምድ እና መርሐ-ግብርዎ መናገር ስለሚገባው ታሪክ እንወያይ። የድርጅት ስብስባችን ገና ይመጣል።",
+      "cta": "ስለ መርሐ-ግብርዎ ይወያዩ"
     },
-    "outro": "Every celebration tells a unique story.",
-    "outroCta": "Let’s create yours",
-    "studioCollection": "Studio collection",
-    "fromStudio": "From the studio collection",
-    "visualStudy": "Visual study",
-    "categoryStudy": "{category} · Visual study",
-    "detailsAria": "{title} collection details",
-    "paletteAria": "Collection colour palette",
-    "details": "The details",
-    "exploreGallery": "Explore the gallery",
-    "createPersonal": "Create something personal",
-    "galleryAria": "{title} image and film gallery",
-    "videoFailed": "This film couldn’t load.",
-    "openOriginal": "Open the original film",
-    "tryAgain": "Try again",
-    "noVideo": "Your browser does not support video.",
-    "openFilm": "Open the film.",
-    "previous": "Previous image or film",
-    "next": "Next image or film",
-    "aboutCollection": "About this collection",
+    "outro": "እያንዳንዱ ክብረ በዓል ልዩ ታሪክን ይናገራል።",
+    "outroCta": "የእርስዎን እንፍጠር",
+    "studioCollection": "የስቱዲዮ ስብስብ",
+    "fromStudio": "ከስቱዲዮ ስብስብ",
+    "visualStudy": "የእይታ ጥናት",
+    "categoryStudy": "{category} · የእይታ ጥናት",
+    "detailsAria": "የ {title} ስብስብ ዝርዝሮች",
+    "paletteAria": "የስብስቡ የቀለም ምርጫዎች",
+    "details": "ዝርዝሮቹ",
+    "exploreGallery": "ጋለሪውን ያስሱ",
+    "createPersonal": "ግላዊ የሆነ ነገር ይፍጠሩ",
+    "galleryAria": "የ {title} ምስል እና ፊልም ጋለሪ",
+    "videoFailed": "ይህ ፊልም ሊጫን አልቻለም።",
+    "openOriginal": "ኦሪጅናል ፊልሙን ክፈት",
+    "tryAgain": "እንደገና ይሞክሩ",
+    "noVideo": "አሳሽዎ (Browser) ቪዲዮ አይደግፍም።",
+    "openFilm": "ፊልሙን ክፈት።",
+    "previous": "ቀደም ያለ ምስል ወይም ፊልም",
+    "next": "ቀጣይ ምስል ወይም ፊልም",
+    "aboutCollection": "ስለዚህ ስብስብ",
     "categories": {
-      "all": "All",
-      "weddings": "Weddings",
-      "birthdays": "Birthdays",
-      "corporate": "Corporate Events",
-      "stage": "Stage Decor"
+      "all": "ሁሉም",
+      "weddings": "ሰርጎች",
+      "birthdays": "የልደት በዓላት",
+      "corporate": "የድርጅት መርሐ-ግብሮች",
+      "stage": "የመድረክ ዴኮር"
     },
     "items": {
       "ivory-and-gold": {
-        "title": "Ivory & gold",
-        "subtitle": "Soft florals. A luminous setting.",
-        "coverAlt": "An ivory wedding stage with gold furniture, white floral arrangements and a flower-filled glass walkway.",
-        "description": "An exploration of white-on-white texture, graceful floral forms and the quiet warmth of gold. Draped ceilings and carefully framed focal points turn a room into a setting for a meaningful moment.",
+        "title": "ዕንቁላል ነጭ እና ወርቃማ (Ivory & gold)",
+        "subtitle": "ለስላሳ አበባዎች። ብሩህ አቀማመጥ።",
+        "coverAlt": "በወርቃማ ዕቃዎች፣ ነጭ የአበባ ዝግጅቶች እና በአበባ በተሞላ የመስታወት መተላለፊያ መንገድ የታጀበ የዕንቁላል ነጭ የሰርግ መድረክ።",
+        "description": "የነጭ-በርዕስ-ነጭ ሸካራነት፣ ውብ የአበባ ቅርጾች እና የወርቅ ጸጥ ያለ ሙቀት ፍለጋ። የተንጠለጠሉ ጣራዎች እና በጥንቃቄ የተዘጋጁ የትኩረት ነጥቦች ክፍሉን ትርጉም ላለው ጊዜ ማዘጋጃ ቦታ ይለውጡታል።",
         "palette": [
-          "Ivory",
-          "Warm gold",
-          "Leaf green"
+          "ዕንቁላል ነጭ (Ivory)",
+          "ሙቅ ወርቃማ",
+          "የቅጠል አረንጓዴ"
         ],
         "details": [
-          "White floral arrangements layered against soft ivory draping.",
-          "Gold accents and repeating architectural frames.",
-          "A related film study of floral arches and illuminated details."
+          "ከሰለሰለ የዕንቁላል ነጭ መጋረጃ ጋር የተደረደሩ ነጭ የአበባ ዝግጅቶች።",
+          "ወርቃማ ድምቀቶች እና ተደጋጋሚ የስነ-ህንጻ ፍሬሞች።",
+          "የአበባ ቅስቶች እና የበራላቸው ዝርዝሮች ተዛማጅ የፊልም ጥናት።"
         ],
         "media": [
-          "White and gold wedding decor with an elevated stage and floral glass walkway.",
-          "A film study of ivory floral arches, luminous frames and draped event decor."
+          "ከፍ ያለ መድረክ እና የአበባ መስታወት መተላለፊያ መንገድ ያለው ነጭ እና ወርቃማ የሰርግ ዴኮር።",
+          "የዕንቁላል ነጭ የአበባ ቅስቶች፣ ብሩህ ፍሬሞች እና የተንጠለጠለ የክንዋኔ ዴኮር የፊልም ጥናት።"
         ]
       },
       "rooted-in-ritual": {
-        "title": "Rooted in ritual",
-        "subtitle": "Heritage, with a contemporary rhythm.",
-        "coverAlt": "Sculptural ivory arches with flowers, warm lights and colourful woven basket details.",
-        "description": "Sculptural arches create a calm architectural backdrop, while woven details bring colour, texture and cultural character. A visual study of how a contemporary setting can hold a deeply familiar feeling.",
+        "title": "በባህላዊ ስነ-ስርዓት ላይ የተመሰረተ",
+        "subtitle": "ቅርስ፣ ከዘመናዊ ምት ጋር።",
+        "coverAlt": "በአበባ፣ በሙቅ ብርሃናት እና በቀለማት ያሸበረቁ የተጠለፉ ቅርጫት ዝርዝሮች የታጀቡ የቅርጻ ቅርጽ ዕንቁላል ነጭ ቅስቶች።",
+        "description": "የቅርጻ ቅርጽ ቅስቶችረጋ ያለ የስነ-ህንጻ ጀርባ ሲፈጥሩ፣ የተጠለፉ ዝርዝሮች ደግሞ ቀለምን፣ ሸካራነትን እና ባህላዊ ባህሪን ያመጣሉ። ዘመናዊ አቀማመጥ ጥልቅ የሆነ የምታወቀው ስሜት እንዴት መያዝ እንደሚችል የእይታ ጥናት።",
         "palette": [
-          "Chalk",
-          "Woven straw",
-          "Terracotta"
+          "ኖራ (Chalk)",
+          "የተጠለፈ ገለባ",
+          "ቴራኮታ"
         ],
         "details": [
-          "Layered ivory arches with warm accent lighting.",
-          "Woven basket details placed among soft floral arrangements.",
-          "A complementary study of woven textures and a coffee ceremony setting."
+          "በሙቅ የድምቀት መብራቶች የታጀቡ የተደረደሩ የዕንቁላል ነጭ ቅስቶች።",
+          "ለስላሳ የአበባ ዝግጅቶች መካከል የተቀመጡ የተጠለፉ ቅርጫት ዝርዝሮች።",
+          "የተጠለፉ ሸካራነቶች እና የቡና ስነ-ስርዓት አቀማመጥ ተጨማሪ ጥናት።"
         ],
         "media": [
-          "Layered cream arches decorated with warm lights, flowers and colourful woven baskets.",
-          "Woven baskets and pale flowers behind a coffee ceremony setting with white cups."
+          "በሙቅ መብራቶች፣ አበቦች እና በቀለማት ያሸበረቁ የተጠለፉ ቅርጫቶች ያጌጡ የተደረደሩ የክሬም ቅስቶች።",
+          "ከነጭ ጽዋዎች ጋር ከቡና ስነ-ስርዓት አቀማመጥ ጀርባ ያሉ የተጠለፉ ቅርጫቶች እና ለስላሳ አበቦች።"
         ]
       },
       "a-softer-celebration": {
-        "title": "A softer celebration",
-        "subtitle": "A little wonder, beautifully imagined.",
-        "coverAlt": "Blush and cream balloons, white arches and floral accents in an intimate celebration setting.",
-        "description": "Blush, cream and a sense of play. Rounded forms, gentle colour and delicate floral accents bring a considered touch to personal celebrations, with space for the smallest details to feel special.",
+        "title": "ለስላሳ አከባበር",
+        "subtitle": "ትንሽ ድንቅ ነገር፣ በውበት የታሰበ።",
+        "coverAlt": "በጠበቀ የአከባበር አቀማመጥ ውስጥ ሮዝ እና ክሬም አሻንጉሊቶች (ബಲೂኖች)፣ ነጭ ቅስቶች እና የአበባ ድምቀቶች።",
+        "description": "ሮዝ (Blush)፣ ክሬም እና የመጫወት ስሜት። የተጠጋጉ ቅርጾች፣ ለስላሳ ቀለም እና ለስላሳ የአበባ ድምቀቶች ለግል ክብረ በዓላት የታሰበ ንክኪ ያመጣሉ፣ አነስተኛ የሆኑት ዝርዝሮችም ልዩ ስሜት እንዲሰማቸው ክፍተት ይሰጣሉ።",
         "palette": [
-          "Blush",
-          "Vanilla",
-          "Pearl"
+          "ሮዝ (Blush)",
+          "ቫኒላ",
+          "ዕንቁ (Pearl)"
         ],
         "details": [
-          "An organic balloon arrangement in warm pastel shades.",
-          "White arches and plinths create a soft, sculptural backdrop.",
-          "A related birthday film explores pink draping and oversized bow details."
+          "በሙቅ የፓስተር ጥላዎች ውስጥ ኦርጋኒክ የአሻንጉሊት (ബಲೂን) ዝግጅት።",
+          "ነጭ ቅስቶች እና መሠረቶች (plinths) ለስላሳ፣ ቅርጻ ቅርጽ ያለው የጀርባ ገጽታ ይፈጥራሉ።",
+          "የተዛመደ የልደት ፊልም ሮዝ መጋረጃዎችን እና ግዙፍ ቀስት (bow) ዝርዝሮችን ይዳስሳል።"
         ],
         "media": [
-          "A pastel balloon arch over an ivory backdrop with white display plinths and floral accents.",
-          "A birthday decor film with pink balloons, a large bow and soft draped details."
+          "በነጭ ማሳያ መሠረቶች እና በአበባ ድምቀቶች ላይ ከዕንቁላል ነጭ ጀርባ በላይ ያለ የፓስተር አሻንጉሊት (ബಲೂን) ቅስት።",
+          "በሮዝ አሻንጉሊቶች (ബಲೂኖች)፣ በትልቅ ቀስት እና ለስላሳ በተንጠለጠሉ ዝርዝሮች የታጀበ የልደት ዴኮር ፊልም።"
         ]
       },
       "joy-in-full-colour": {
-        "title": "Joy, in full colour",
-        "subtitle": "For the wonderfully expressive moments.",
-        "coverAlt": "A colourful celebration display with a playful balloon arrangement and decorative backdrop.",
-        "description": "A brighter expression of celebration, built around playful colour and generous balloon forms. This study makes room for personality, turning a decorative focal point into part of the occasion’s character.",
+        "title": "ደስታ፣ በሙሉ ቀለም",
+        "subtitle": "ለተለዩ አስደናቂ ገላጭ ጊዜያት።",
+        "coverAlt": "በተጫዋች የአሻንጉሊት (ബಲೂን) ዝግጅት እና አስጌጥ የጀርባ ገጽታ የታጀበ ባለቀለም ክብረ በዓል ማሳያ።",
+        "description": "በተጫዋች ቀለም እና ሰፊ የአሻንጉሊት (ബಲೂን) ቅርጾች γ-ዙሪያ የተገነባ፣ የበራ የአከባበር መግለጫ። ይህ ጥናት ለባህሪ ቦታ ይሰጣል፣ የጌጣጌጥ የትኩረት ነጥብን የክብረ በዓሉ ባህሪ አካል ያደርገዋል።",
         "palette": [
-          "Rose",
-          "Butter",
-          "Soft blue"
+          "ሮዝ (Rose)",
+          "ቅቤ (Butter)",
+          "ለስላሳ ሰማያዊ"
         ],
         "details": [
-          "A playful mix of balloon colours and scales.",
-          "A decorative backdrop that gives the celebration a focal point.",
-          "An expressive direction for a personal occasion."
+          "የአሻንጉሊት (ബಲೂን) ቀለሞች እና ልኬቶች ተጫዋች ውህደት።",
+          "ለክብረ በዓሉ የትኩረት ነጥብ የሚሰጥ አስጌጥ የጀርባ ገጽታ።",
+          "ለግል አጋጣሚ የሚሆን ገላጭ አቅጣጫ።"
         ],
         "media": [
-          "A colourful balloon installation framing a decorative celebration backdrop."
+          "አስጌጥ የክብረ በዓል የጀርባ ገጽታን የሚያቀፈቅፍ ባለቀለም የአሻንጉሊት (ബಲೂን) ተከላ (installation)።"
         ]
       }
     }
   },
   "process": {
-    "eyebrow": "Why choose us",
-    "title": "Why choose<br></br><em>Timeless Décor & Events?</em>",
-    "lead": "Elegant ideas, dependable people and a team that stays with you from the first conversation to the final detail.",
+    "eyebrow": "ለምን እኛን መረጡ",
+    "title": "ለምን <br></br><em>ታይምለስ ዴኮር እና ኢቨንትስን መረጡ?</em>",
+    "lead": "ያማሩ ሃሳቦች፣ ታማኝ ሰዎች እና ከመጀመሪያው ውይይት እስከ መጨረሻው ዝርዝር ድረስ ከእርስዎ ጋር የሚቆይ ቡድን።",
     "reasons": [
-      "Professional and experienced team",
-      "Creative and customized designs",
-      "High-quality décor materials",
-      "Affordable packages",
-      "On-time delivery and setup",
-      "Friendly and reliable customer service",
-      "Attention to every detail",
-      "Complete event management solutions"
+      "ፕሮፌሽናል እና ልምድ ያለው ቡድን",
+      "የፈጠራ እና ብጁ ዲዛይኖች",
+      "ከፍተኛ ጥራት ያላቸው የዴኮር እቃዎች",
+      "ተመጣጣኝ ፓኬጆች",
+      "በሰዓቱ ማድረስ እና ማስተካከል",
+      "ወዳጃዊ እና ታማኝ የደንበኛ አገልግሎት",
+      "ለእያንዳንዱ ዝርዝር ትኩረት መስጠት",
+      "የተሟላ የክንዋኔ አስተዳደር መፍትሄዎች"
     ],
-    "bottom": "Every celebration tells a unique story.",
-    "bottomCta": "Begin your story"
+    "bottom": "እያንዳንዱ ክብረ በዓል ልዩ ታሪክን ይናገራል።",
+    "bottomCta": "ታሪክዎን ይጀምሩ"
   },
   "testimonials": {
-    "aria": "Our motto",
-    "eyebrow": "Our motto",
-    "quote": "Creating timeless memories<br></br><em>through elegant celebrations.</em>",
-    "name": "Our motto",
-    "role": "Timeless Décor & Events",
-    "clientAria": "Client testimonials",
-    "clientEyebrow": "Words that stay with us",
-    "carouselAria": "Approved client testimonials",
-    "slideAria": "{index} of {total}",
-    "previous": "Previous testimonial",
-    "next": "Next testimonial",
-    "press": "In the press"
+    "aria": "መፈክራችን",
+    "eyebrow": "መፈክራችን",
+    "quote": "በሚያምር አከባበር<br></br><em>የማይረሱ ትውስታዎችን እንፈጥራለን።</em>",
+    "name": "መፈክራችን",
+    "role": "ታይምለስ ዴኮር እና ኢቨንትስ",
+    "clientAria": "የደንበኞች ምስክርነቶች",
+    "clientEyebrow": "ከእኛ ጋር የሚቆዩ ቃላት",
+    "carouselAria": "የጸደቁ የደንበኞች ምስክርነቶች",
+    "slideAria": "ከ {total} ቁጥር {index}",
+    "previous": "ቀደም ያለ ምስክርነት",
+    "next": "ቀጣይ ምስክርነት",
+    "press": "በፕሬስ ውስጥ"
   },
   "contact": {
-    "eyebrow": "Your next chapter",
-    "title": "Every extraordinary event begins with a <em>conversation.</em>",
-    "copy": "Copy inquiry",
-    "callAria": "Call Timeless Décor & Events on 0941097286",
-    "speak": "Speak to our studio",
-    "more": "More ways to reach us",
-    "formEyebrow": "An invitation to imagine",
-    "formLead": "A few details, a world of possibility.",
-    "optional": "(optional)",
-    "summary": "Please check the highlighted fields below.",
-    "name": "Your name",
-    "namePlaceholder": "Full name",
-    "phone": "Phone number",
-    "phonePlaceholder": "Your contact number",
-    "email": "Email address",
+    "eyebrow": "የሚቀጥለው ምዕራፍዎ",
+    "title": "እያንዳንዱ ልዩ መርሐ-ግብር የሚጀምረው <em>በውይይት</em> ነው።",
+    "copy": "ጥያቄውን ቅዳ (Copy)",
+    "callAria": "ታይምለስ ዴኮር እና ኢቨንትስን በ 0941097286 ይደውሉ",
+    "speak": "ለስቱዲዮአችን ይናገሩ",
+    "more": "እኛን ለማግኘት ሌሎች መንገዶች",
+    "formEyebrow": "ለመገመት ግብዣ",
+    "formLead": "ጥቂት ዝርዝሮች፣ የዕድሎች ዓለም።",
+    "optional": "( አማራጭ )",
+    "summary": "እባክዎ ከታች የደመቁትን መስኮች ያረጋግጡ።",
+    "name": "የእርስዎ ስም",
+    "namePlaceholder": "ሙሉ ስም",
+    "phone": "ስልክ ቁጥር",
+    "phonePlaceholder": "የመገናኛ ስልክ ቁጥርዎ",
+    "email": "የኢሜይል አድራሻ",
     "emailPlaceholder": "you@example.com",
-    "occasion": "Occasion",
-    "occasionPlaceholder": "Select your occasion",
-    "date": "Preferred date",
-    "guests": "Number of guests",
-    "guestsPlaceholder": "Estimated guest count",
-    "budget": "Budget range",
-    "budgetPlaceholder": "Your preferred range & currency",
-    "venue": "Venue or location",
-    "venuePlaceholder": "A venue, a city, or still deciding",
-    "message": "The feeling you have in mind",
-    "messagePlaceholder": "Tell us about the atmosphere, the details, the moment…",
-    "honeypot": "Leave this field empty",
-    "consent": "I agree that Timeless Décor & Events may contact me about this inquiry.",
-    "manual": "Prepare a manual inquiry",
-    "submitting": "Submitting your inquiry",
-    "send": "Send my inquiry",
-    "prepare": "Prepare my inquiry",
-    "noteDelivery": "Your details will be used to respond to this inquiry. Submitting a request does not confirm a booking.",
-    "noteManual": "Review your inquiry, then choose how to share it. Preparing this form does not send your details.",
-    "deliveryFailed": "Delivery could not be confirmed. Please use the manual contact options.",
-    "deliveryOffline": "Delivery could not be confirmed. Your details are still here; please call the studio or prepare a manual inquiry below.",
-    "reviewEyebrowSent": "A beautiful beginning",
-    "reviewEyebrow": "One step closer",
-    "reviewTitleSent": "Your inquiry has been submitted.",
-    "reviewTitle": "Your vision, ready to share.",
-    "statusSent": "The booking service has accepted your details. Please call the studio if you need to confirm availability.",
-    "statusUnconfirmed": "Your inquiry is ready. Delivery could not be confirmed. Please contact the studio before sending again.",
-    "statusReady": "Your inquiry is ready. It has not been sent.",
-    "reviewLabel": "Your inquiry — select or copy the text",
-    "save": "Save as text",
-    "sms": "Open SMS",
-    "copied": "Copied. You can paste your inquiry into a message.",
-    "selected": "Your inquiry text is selected. Use your device’s Copy command to copy it.",
-    "smsNote": "SMS opens your device’s messaging app. Review the message and send it there when you are ready.",
-    "edit": "Edit details"
+    "occasion": "መርሐ-ግብር (Occasion)",
+    "occasionPlaceholder": "መርሐ-ግብርዎን ይምረጡ",
+    "date": "የተመረጠበት ቀን",
+    "guests": "የእንግዶች ብዛት",
+    "guestsPlaceholder": "ግምታዊ የእንግዶች ቁጥር",
+    "budget": "የበጀት መጠን",
+    "budgetPlaceholder": "የእርስዎ ተመራጭ መጠን እና ምንዛሬ",
+    "venue": "ቦታ ወይም አካባቢ",
+    "venuePlaceholder": "አንድ ቦታ፣ ከተማ፣ ወይም አሁንም በመወሰን ላይ",
+    "message": "በአዕምሮዎ ውስጥ ያለው ስሜት",
+    "messagePlaceholder": "ስለ ከባቢ አየር፣ ዝርዝሮች፣ ጊዜው ይንገሩን…",
+    "honeypot": "ይህንን መስክ ባዶ ይተዉት",
+    "consent": "ታይምለስ ዴኮር እና ኢቨንትስ ስለዚህ ጥያቄ ሊያነጋግሩኝ እንደሚችሉ እስማማለሁ።",
+    "manual": "በእጅ የሚሰራ ጥያቄ ያዘጋጁ",
+    "submitting": "ጥያቄዎን በማስገባት ላይ",
+    "send": "ጥያቄዬን ላክ",
+    "prepare": "ጥያቄዬን አዘጋጅ",
+    "noteDelivery": "ዝርዝሮችዎ ለዚህ ጥያቄ ምላሽ ለመስጠት ያገለግላሉ። ጥያቄ ማቅረብ መያዣ (booking) አያረጋግጥም።",
+    "noteManual": "ጥያቄዎን ይገመግሙ፣ ከዚያ እንዴት ማጋራት እንደሚችሉ ይምረጡ። ይህንን ቅጽ ማዘጋጀት ዝርዝርዎን አይልክም።",
+    "deliveryDeliveryFailed": "ማድረስ አልተረጋገጠም። እባክዎ የእጅ መገናኛ አማራጮችን ይጠቀሙ።",
+    "deliveryOffline": "ማድረስ አልተረጋገጠም። ዝርዝርዎ አሁንም እዚህ አለ፤ እባክዎ ለስቱዲዮው ይደውሉ ወይም ከዚህ በታች የእጅ ጥያቄ ያዘጋጁ።",
+    "reviewEyebrowSent": "ውብ መነሻ",
+    "reviewEyebrow": "አንድ እርምጃ ወደፊት",
+    "reviewTitleSent": "ጥያቄዎ ገብቷል።",
+    "reviewTitle": "ራዕይዎ፣ ለማጋራት ዝግጁ ነው።",
+    "statusSent": "የቦታ ማስያዣ አገልግሎቱ ዝርዝርዎን ተቀብሏል። ተገኝነትን ማረጋገጥ ከፈለጉ እባክዎ ስቱዲዮውን ይደውሉ።",
+    "statusUnconfirmed": "ጥያቄዎ ዝግጁ ነው። ማድረስ አልተረጋገጠም። ከማስተላለፍዎ በፊት እባክዎ ስቱዲዮውን ያግኙ።",
+    "statusReady": "ጥያቄዎ ዝግጁ ነው። አልተላከም።",
+    "reviewLabel": "ጥያቄዎ — ጽሑፉን ይምረጡ ወይም ይቅዱ (Copy)",
+    "save": "እንደ ጽሑፍ አስቀምጥ",
+    "sms": "ኤስኤምኤስ (SMS) ክፈት",
+    "copied": "ተቀድቷል። (Copied) ጥያቄዎን ወደ መልእክት መለጠፍ (paste) ይችላሉ።",
+    "selected": "የጥያቄዎ ጽሑፍ ተመርጧል። ለመቅዳት የመሳሪያዎን የቅጂ ትዕዛዝ ይጠቀሙ።",
+    "smsNote": "ኤስኤምኤስ (SMS) የመሳሪያዎን የመልእክት መላኪያ መተግበሪያ ይከፍታል። መልእክቱን ይገመግሙ እና ዝግጁ ሲሆኑ እዚያ ይላኩት።",
+    "edit": "ዝርዝሮችን አስተካክል"
   },
   "eventTypes": {
-    "Weddings": "Weddings",
-    "Birthdays": "Birthdays",
-    "Graduations": "Graduations",
-    "Baby Showers": "Baby Showers",
-    "Engagements": "Engagements",
-    "Corporate Events": "Corporate Events",
-    "Other": "Other"
+    "Weddings": "ሰርጎች",
+    "Birthdays": "የልደት በዓላት",
+    "Graduations": "ምረቃዎች",
+    "Baby Showers": "የሕፃናት መናፍቅ (Baby Showers)",
+    "Engagements": "እጮኝነቶች",
+    "Corporate Events": "የድርጅት መርሐ-ግብሮች",
+    "Other": "ሌሎች"
   },
   "contactPanel": {
-    "title": "Contact Timeless Décor & Events",
-    "eyebrow": "Contact us",
-    "heading": "Let’s create<br></br><em>something timeless.</em>",
-    "lead": "Call, message or send us your idea. We’ll answer every celebration with the same care.",
-    "call": "Call",
-    "mainLine": "Main line",
-    "studio": "Studio",
-    "followUs": "Follow us",
-    "opensNewTab": "opens in a new tab"
+    "title": "ታይምለስ ዴኮር እና ኢቨንትስን ያግኙ",
+    "eyebrow": "ያግኙን",
+    "heading": "እንፍጠር <br></br><em>የማይረሳ ነገር።</em>",
+    "lead": "ይደውሉ፣ መልእክት ይላኩ ወይም ሃሳብዎን ይላኩልን። ለእያንዳንዱ ክብረ በዓል በተመሳሳይ ጥንቃቄ ምላሽ እንሰጣለን።",
+    "call": "ይደውሉ",
+    "mainLine": "ዋና መስመር",
+    "studio": "ስቱዲዮ",
+    "followUs": "ይከተሉን",
+    "opensNewTab": "በአዲስ ትር (tab) ይከፈታል"
   },
   "footer": {
-    "navLabel": "Footer navigation",
-    "about": "About us",
-    "services": "Our services",
-    "work": "Our work",
-    "why": "Why choose us",
-    "contact": "Begin a conversation",
-    "message": "Creating timeless<br></br>memories through <em>elegant celebrations.</em>",
-    "logoLabel": "Timeless Décor & Events, back to top",
-    "backToTop": "BACK TO TOP",
-    "rights": "© {year} TIMELESS DÉCOR & EVENTS",
-    "privacy": "Privacy & inquiries",
-    "privacyTitle": "Privacy and inquiries",
-    "privacyEyebrow": "A NOTE ON YOUR DETAILS",
-    "privacyHeading": "Privacy &<br></br><em>inquiries.</em>",
-    "privacy1": "The inquiry form uses the details you provide to prepare your event request. If online delivery is available, choosing to send forwards those details to the studio’s configured inquiry service. Otherwise, you choose whether to copy, download or share the prepared message by SMS.",
-    "privacy2": "Preparing a message alone does not send it. Opening an SMS draft does not send it either; your messaging app asks you to complete that step. Your carrier’s usual messaging charges may apply.",
-    "privacy3": "This website does not include advertising trackers or an analytics service. Fonts and décor media are served with the website. Your browser and the website host still exchange the technical information required to load pages.",
-    "privacy4": "For questions about information you have shared, contact Timeless Décor & Events on <phone>{phone}</phone>."
+    "navLabel": "የግርጌ (Footer) ማውጫ",
+    "about": "ስለ እኛ",
+    "services": "አገልግሎቶቻችን",
+    "work": "ሥራዎቻችን",
+    "why": "ለምን እኛን መረጡ",
+    "contact": "ውይይት ይጀምሩ",
+    "message": "በሚያምር አከባበር<br></br><em>የማይረሱ ትውስታዎችን እንፈጥራለን።</em>",
+    "logoLabel": "ታይምለስ ዴኮር እና ኢቨንትስ፣ ወደ ላይ ተመለስ",
+    "backToTop": "ወደ ላይ ተመለስ",
+    "rights": "© {year} ታይምለስ ዴኮር እና ኢቨንትስ",
+    "privacy": "ግላዊነት እና ጥያቄዎች",
+    "privacyTitle": "ግላዊነት እና ጥያቄዎች",
+    "privacyEyebrow": "ስለ ዝርዝሮችዎ ማስታወሻ",
+    "privacyHeading": "ግላዊነት እና<br></br><em>ጥያቄዎች።</em>",
+    "privacy1": "የጥያቄ ቅጹ የክንዋኔ ጥያቄዎን ለማዘጋጀት የሚያቀርቧቸውን ዝርዝሮች ይጠቀማል። የመስመር ላይ መላኪያ የሚገኝ ከሆነ፣ ለመላክ መምረጥ እነዚያን ዝርዝሮች ለስቱዲዮው የተዋቀረ የጥያቄ አገልግሎት ያስተላልፋል። ካልሆነ ግን፣ የተዘጋጀውን መልእክት በኤስኤምኤስ (SMS) መቅዳት፣ ማውረድ ወይም ማጋራት አለመጋራት እርስዎ ይወስናሉ።",
+    "privacy2": "መልእክት ማዘጋጀት ብቻውን አይልከውም። የኤስኤምኤስ (SMS) ረቂቅ መክፈትም አይልከውም፤ የመልእክት መላኪያ መተግበሪያዎ ያንን እርምጃ እንዲጨርሱ ይጠይቅዎታል። የሐዋላ (carrier)ዎ ተራ የመልእክት ክፍያዎች ሊኖሩ ይችላሉ።",
+    "privacy3": "ይህ ድር ጣቢያ የማስታወቂያ መከታተያዎችን (trackers) ወይም የትንታኔ አገልግሎትን አያካትትም። ቅርደቦች (Fonts) እና የዴኮር ሚዲያዎች ከድር ጣቢያው ጋር ይቀርባሉ። አሳሽዎ እና የድር ጣቢያው አስተናጋጅ ገጾችን ለመጫን የሚያስፈልጉትን ቴክኒካዊ መረጃዎች አሁንም ይለዋወጣሉ።",
+    "privacy4": "ስለጋራኟቸው መረጃዎች ጥያቄዎች ካሉዎት፣ ታይምለስ ዴኮር እና ኢቨንትስን በ <phone>{phone}</phone> ያግኙ።"
   },
   "errors": {
-    "eyebrow": "A BRIEF INTERLUDE",
-    "title": "Let’s try<br></br><em>that again.</em>",
-    "text": "Something interrupted the page. Your celebration can still begin with a call to <phone>{phone}</phone>.",
-    "reload": "Reload this view",
-    "notFoundEyebrow": "TIMELESS · 404",
-    "notFoundTitle": "A different<br></br><em>kind of detour.</em>",
-    "notFoundText": "This page has moved, or its story is still to be written.",
-    "notFoundCta": "Return to Timeless"
+    "eyebrow": "አጭር እረፍት",
+    "title": "እንሞክረው<br></br><em>እንደገና።</em>",
+    "text": "አንድ ነገር ገጹን አቋርጦታል። ክብረ በዓልዎ አሁንም በ <phone>{phone}</phone> በመደወል ሊጀምር ይችላል።",
+    "reload": "ይህንን እይታ እንደገና ጫን (Reload)",
+    "notFoundEyebrow": "ታይምለስ · 404",
+    "notFoundTitle": "የተለየ<br></br><em>የመዘዋወሪያ አይነት።</em>",
+    "notFoundText": "ይህ ገጽ ተንቀሳቅሷል፣ ወይም ታሪኩ ገና ሊጻፍ ነው።",
+    "notFoundCta": "ወደ ታይምለስ ተመለስ"
   }
 }
