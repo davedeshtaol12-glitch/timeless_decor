@@ -2,9 +2,11 @@
 
 import { useCallback, useEffect, useRef, useState, type MouseEvent } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight, Play, Plus } from "lucide-react";
-import { categories, portfolioItems, type PortfolioFilter } from "@/data/portfolio";
+import { categories, portfolioItems, type PortfolioFilter, type PortfolioItem } from "@/data/portfolio";
+import { richTags } from "@/lib/rich";
 import Dialog from "./Dialog";
 import Reveal from "./Reveal";
 import SplitText from "./SplitText";
@@ -17,7 +19,8 @@ interface Selection {
 }
 
 export default function Portfolio() {
-  const [category, setCategory] = useState<PortfolioFilter>("All");
+  const t = useTranslations("portfolio");
+  const [category, setCategory] = useState<PortfolioFilter>("all");
   const [selection, setSelection] = useState<Selection | null>(null);
   const [failedSource, setFailedSource] = useState<string | null>(null);
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -25,9 +28,22 @@ export default function Portfolio() {
   const mediaVideoRef = useRef<HTMLVideoElement>(null);
   const pendingContactNavigation = useRef(false);
   const reducedMotion = useReducedMotion();
-  const filteredItems = portfolioItems.filter((item) => category === "All" || item.category === category);
+  const filteredItems = portfolioItems.filter((item) => category === "all" || item.category === category);
   const selectedItem = portfolioItems.find((item) => item.id === selection?.itemId);
   const selectedMedia = selectedItem?.media[selection?.mediaIndex ?? 0];
+
+  /** Everything a person reads about a collection comes from messages/*.json. */
+  const copy = (item: PortfolioItem) => ({
+    title: t(`items.${item.id}.title`),
+    subtitle: t(`items.${item.id}.subtitle`),
+    coverAlt: t(`items.${item.id}.coverAlt`),
+    description: t(`items.${item.id}.description`),
+    palette: t.raw(`items.${item.id}.palette`) as string[],
+    details: t.raw(`items.${item.id}.details`) as string[],
+    media: t.raw(`items.${item.id}.media`) as string[],
+    category: t(`categories.${item.category}`),
+  });
+  const selectedCopy = selectedItem ? copy(selectedItem) : null;
 
   const close = useCallback(() => {
     setSelection(null);
@@ -106,30 +122,31 @@ export default function Portfolio() {
       <div className={styles.container}>
         <Reveal className={styles.intro}>
           <div>
-            <p className={styles.eyebrow}><span /> Our work</p>
-            <SplitText as="h2" id="portfolio-heading" className={styles.heading}>A world of<br /><em>possibilities.</em></SplitText>
+            <p className={styles.eyebrow}><span /> {t("eyebrow")}</p>
+            <SplitText as="h2" id="portfolio-heading" className={styles.heading}>{t.rich("title", richTags)}</SplitText>
           </div>
           <div className={styles.introAside}>
-            <p>A glimpse of the celebrations we have dressed, from elegant weddings to joyful birthdays and stage décor.</p>
-            <a href="#collection-grid" className={styles.discover}>Discover the collection <ArrowDown size={16} aria-hidden="true" /></a>
+            <p>{t("aside")}</p>
+            <a href="#collection-grid" className={styles.discover}>{t("discover")} <ArrowDown size={16} aria-hidden="true" /></a>
           </div>
         </Reveal>
 
-        <div className={styles.filters} role="group" aria-label="Filter portfolio collections">
+        <div className={styles.filters} role="group" aria-label={t("filtersLabel")}>
           {categories.map((entry) => {
-            const count = portfolioItems.filter((item) => entry === "All" || item.category === entry).length;
+            const count = portfolioItems.filter((item) => entry === "all" || item.category === entry).length;
             return (
               <button type="button" key={entry} onClick={() => setCategory(entry)} aria-pressed={category === entry} className={category === entry ? styles.activeFilter : undefined}>
-                {entry}<span aria-label={`${count} collections`}>{String(count).padStart(2, "0")}</span>
+                {t(`categories.${entry}`)}<span aria-label={t("filterCount", { count })}>{String(count).padStart(2, "0")}</span>
               </button>
             );
           })}
         </div>
 
-        <p className={styles.srOnly} role="status">{filteredItems.length} {filteredItems.length === 1 ? "collection" : "collections"} shown{category === "All" ? "" : ` in ${category}`}.</p>
+        <p className={styles.srOnly} role="status">{category === "all" ? t("shown", { count: filteredItems.length }) : t("shownIn", { count: filteredItems.length, category: t(`categories.${category}`) })}</p>
         <div id="collection-grid" className={styles.stage} onMouseLeave={() => setActiveId(null)}>
           <AnimatePresence mode="popLayout">
             {filteredItems.map((item, index) => {
+              const text = copy(item);
               const itemNumber = String(portfolioItems.indexOf(item) + 1).padStart(2, "0");
               const videoIndex = item.media.findIndex((media) => media.type === "video");
               const active = (activeId ?? filteredItems[0]?.id) === item.id;
@@ -137,20 +154,20 @@ export default function Portfolio() {
               return (
                 <motion.article key={item.id} layout={!reducedMotion} initial={{ opacity: 0, y: reducedMotion ? 0 : 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.1 }} exit={{ opacity: 0 }} transition={{ duration: reducedMotion ? 0 : 0.7, delay: reducedMotion ? 0 : index * 0.09, ease: [0.22, 1, 0.36, 1] }}
                   className={`${styles.panel} ${active ? styles.panelActive : ""}`} onMouseEnter={() => setActiveId(item.id)} onFocusCapture={() => setActiveId(item.id)}>
-                  <button type="button" className={styles.panelImage} onClick={() => (active ? showMedia(item.id) : setActiveId(item.id))} aria-label={`Open ${item.title} gallery`}>
-                    <Image src={item.cover} alt={item.coverAlt} fill sizes="(max-width: 760px) 100vw, 70vw" style={{ objectPosition: item.coverPosition ?? "center" }} className={styles.cover} />
+                  <button type="button" className={styles.panelImage} onClick={() => (active ? showMedia(item.id) : setActiveId(item.id))} aria-label={t("openGallery", { title: text.title })}>
+                    <Image src={item.cover} alt={text.coverAlt} fill sizes="(max-width: 760px) 100vw, 70vw" style={{ objectPosition: item.coverPosition ?? "center" }} className={styles.cover} />
                   </button>
                   <span className={styles.panelShade} aria-hidden="true" />
                   <span className={styles.panelNumber} aria-hidden="true">{itemNumber}</span>
-                  <span className={styles.panelRail} aria-hidden="true">{item.title}</span>
+                  <span className={styles.panelRail} aria-hidden="true">{text.title}</span>
                   <div className={styles.panelInfo}>
-                    <p className={styles.panelCategory}>{item.category} · {item.media.length} {item.media.length === 1 ? "study" : "studies"}</p>
-                    <h3><button type="button" onClick={open} tabIndex={active ? 0 : -1}>{item.title}</button></h3>
-                    <p className={styles.panelSubtitle}>{item.subtitle}</p>
+                    <p className={styles.panelCategory}>{text.category} · {t("studies", { count: item.media.length })}</p>
+                    <h3><button type="button" onClick={open} tabIndex={active ? 0 : -1}>{text.title}</button></h3>
+                    <p className={styles.panelSubtitle}>{text.subtitle}</p>
                     <div className={styles.panelActions}>
-                      <button type="button" onClick={() => showMedia(item.id)} tabIndex={active ? 0 : -1}>View gallery <Plus size={15} strokeWidth={1.4} aria-hidden="true" /></button>
-                      {videoIndex !== -1 && <button type="button" onClick={() => showMedia(item.id, videoIndex)} tabIndex={active ? 0 : -1} aria-label={`Watch ${item.title} film`}><Play size={11} fill="currentColor" aria-hidden="true" /> Watch film</button>}
-                      <button type="button" className={styles.panelOpen} onClick={open} tabIndex={active ? 0 : -1} aria-label={`Explore ${item.title} collection`}><ArrowUpRight size={20} strokeWidth={1.3} aria-hidden="true" /></button>
+                      <button type="button" onClick={() => showMedia(item.id)} tabIndex={active ? 0 : -1}>{t("viewGallery")} <Plus size={15} strokeWidth={1.4} aria-hidden="true" /></button>
+                      {videoIndex !== -1 && <button type="button" onClick={() => showMedia(item.id, videoIndex)} tabIndex={active ? 0 : -1} aria-label={t("watchFilmAria", { title: text.title })}><Play size={11} fill="currentColor" aria-hidden="true" /> {t("watchFilm")}</button>}
+                      <button type="button" className={styles.panelOpen} onClick={open} tabIndex={active ? 0 : -1} aria-label={t("exploreCollection", { title: text.title })}><ArrowUpRight size={20} strokeWidth={1.3} aria-hidden="true" /></button>
                     </div>
                   </div>
                 </motion.article>
@@ -161,55 +178,58 @@ export default function Portfolio() {
 
         {filteredItems.length === 0 && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={styles.emptyState}>
-            <span className={styles.emptyNumber}>Your next occasion</span>
-            <h3>A different stage.<br /><em>The same attention to detail.</em></h3>
-            <p>Planning a corporate event, anniversary or product launch? Let’s discuss the setting, the guest experience and the story your event should tell. Our corporate collection is still to come.</p>
-            <a href="#contact" className={styles.textLink}>Discuss your event <ArrowUpRight size={18} aria-hidden="true" /></a>
+            <span className={styles.emptyNumber}>{t("empty.eyebrow")}</span>
+            <h3>{t.rich("empty.title", richTags)}</h3>
+            <p>{t("empty.text")}</p>
+            <a href="#contact" className={styles.textLink}>{t("empty.cta")} <ArrowUpRight size={18} aria-hidden="true" /></a>
           </motion.div>
         )}
 
         <Reveal className={styles.outro}>
-          <span>Every celebration tells a unique story.</span>
-          <a href="#contact">Let’s create yours <ArrowUpRight size={18} strokeWidth={1.4} aria-hidden="true" /></a>
+          <span>{t("outro")}</span>
+          <a href="#contact">{t("outroCta")} <ArrowUpRight size={18} strokeWidth={1.4} aria-hidden="true" /></a>
         </Reveal>
       </div>
 
-      <Dialog open={selection !== null} onClose={close} title={selectedItem?.title ?? "Studio collection"} className={selection?.mode === "media" ? styles.mediaDialog : styles.collectionDialog}>
-        {selectedItem && selection?.mode === "collection" && (
-          <div className={styles.collectionDetail} ref={modalContentRef} tabIndex={-1} role="document" aria-label={`${selectedItem.title} collection details`}>
-            <div className={styles.detailImage}><Image src={selectedItem.cover} alt={selectedItem.coverAlt} fill sizes="(max-width: 800px) 90vw, 44vw" /></div>
+      <Dialog open={selection !== null} onClose={close} title={selectedCopy?.title ?? t("studioCollection")} className={selection?.mode === "media" ? styles.mediaDialog : styles.collectionDialog}>
+        {selectedItem && selectedCopy && selection?.mode === "collection" && (
+          <div className={styles.collectionDetail} ref={modalContentRef} tabIndex={-1} role="document" aria-label={t("detailsAria", { title: selectedCopy.title })}>
+            <div className={styles.detailImage}><Image src={selectedItem.cover} alt={selectedCopy.coverAlt} fill sizes="(max-width: 800px) 90vw, 44vw" /></div>
             <div className={styles.detailBody}>
-              <p className={styles.eyebrow}>From the studio collection</p>
-              <span className={styles.detailCategory}>{selectedItem.category} · Visual study</span>
-              <h3>{selectedItem.title}</h3>
-              <p className={styles.description}>{selectedItem.description}</p>
-              <div className={styles.palette} aria-label="Collection colour palette">{selectedItem.palette.map((colour) => <span key={colour.name}><i style={{ backgroundColor: colour.color }} aria-hidden="true" />{colour.name}</span>)}</div>
-              <h4>The details</h4>
-              <ul>{selectedItem.details.map((detail) => <li key={detail}>{detail}</li>)}</ul>
-              <button type="button" className={styles.textLink} onClick={() => showMedia(selectedItem.id)}>Explore the gallery <ArrowRight size={17} aria-hidden="true" /></button>
-              <a href="#contact" onClick={goToContact} className={styles.detailContact}>Create something personal <ArrowUpRight size={15} aria-hidden="true" /></a>
+              <p className={styles.eyebrow}>{t("fromStudio")}</p>
+              <span className={styles.detailCategory}>{t("categoryStudy", { category: selectedCopy.category })}</span>
+              <h3>{selectedCopy.title}</h3>
+              <p className={styles.description}>{selectedCopy.description}</p>
+              <div className={styles.palette} aria-label={t("paletteAria")}>{selectedItem.paletteColours.map((colour, index) => <span key={colour}><i style={{ backgroundColor: colour }} aria-hidden="true" />{selectedCopy.palette[index]}</span>)}</div>
+              <h4>{t("details")}</h4>
+              <ul>{selectedCopy.details.map((detail) => <li key={detail}>{detail}</li>)}</ul>
+              <button type="button" className={styles.textLink} onClick={() => showMedia(selectedItem.id)}>{t("exploreGallery")} <ArrowRight size={17} aria-hidden="true" /></button>
+              <a href="#contact" onClick={goToContact} className={styles.detailContact}>{t("createPersonal")} <ArrowUpRight size={15} aria-hidden="true" /></a>
             </div>
           </div>
         )}
-        {selectedItem && selectedMedia && selection?.mode === "media" && (
-          <div className={styles.lightbox} ref={modalContentRef} tabIndex={-1} role="document" aria-label={`${selectedItem.title} image and film gallery`}>
-            <div className={styles.lightboxTop}><span>{selectedItem.category}</span><span>Visual study</span></div>
-            <div className={styles.mediaFrame}>
-              {selectedMedia.type === "image" ? (
-                <Image key={selectedMedia.src} src={selectedMedia.src} alt={selectedMedia.alt} fill sizes="(max-width: 700px) 90vw, 80vw" className={styles.lightboxImage} />
-              ) : failedSource === selectedMedia.src ? (
-                <div className={styles.videoFallback}><Play size={32} aria-hidden="true" /><p>This film couldn’t load.</p><a href={selectedMedia.src} target="_blank" rel="noopener noreferrer">Open the original film <ArrowUpRight size={16} aria-hidden="true" /></a><button type="button" onClick={() => setFailedSource(null)}>Try again</button></div>
-              ) : (
-                <video key={selectedMedia.src} ref={mediaVideoRef} src={selectedMedia.src} controls playsInline autoPlay preload="metadata" poster={selectedMedia.poster} aria-label={selectedMedia.alt} onError={() => setFailedSource(selectedMedia.src)}>Your browser does not support video. <a href={selectedMedia.src}>Open the film.</a></video>
-              )}
+        {selectedItem && selectedCopy && selectedMedia && selection?.mode === "media" && (() => {
+          const mediaAlt = selectedCopy.media[selection.mediaIndex] ?? selectedCopy.title;
+          return (
+            <div className={styles.lightbox} ref={modalContentRef} tabIndex={-1} role="document" aria-label={t("galleryAria", { title: selectedCopy.title })}>
+              <div className={styles.lightboxTop}><span>{selectedCopy.category}</span><span>{t("visualStudy")}</span></div>
+              <div className={styles.mediaFrame}>
+                {selectedMedia.type === "image" ? (
+                  <Image key={selectedMedia.src} src={selectedMedia.src} alt={mediaAlt} fill sizes="(max-width: 700px) 90vw, 80vw" className={styles.lightboxImage} />
+                ) : failedSource === selectedMedia.src ? (
+                  <div className={styles.videoFallback}><Play size={32} aria-hidden="true" /><p>{t("videoFailed")}</p><a href={selectedMedia.src} target="_blank" rel="noopener noreferrer">{t("openOriginal")} <ArrowUpRight size={16} aria-hidden="true" /></a><button type="button" onClick={() => setFailedSource(null)}>{t("tryAgain")}</button></div>
+                ) : (
+                  <video key={selectedMedia.src} ref={mediaVideoRef} src={selectedMedia.src} controls playsInline autoPlay preload="metadata" poster={selectedMedia.poster} aria-label={mediaAlt} onError={() => setFailedSource(selectedMedia.src)}>{t("noVideo")} <a href={selectedMedia.src}>{t("openFilm")}</a></video>
+                )}
+              </div>
+              <div className={styles.lightboxBottom}>
+                <div><h3>{selectedCopy.title}</h3><p className={styles.mediaCaption} aria-live="polite">{mediaAlt}</p></div>
+                {selectedItem.media.length > 1 && <div className={styles.mediaControls}><button type="button" onClick={() => navigateMedia(-1)} aria-label={t("previous")}><ArrowLeft size={20} aria-hidden="true" /></button><span aria-live="polite">{String(selection.mediaIndex + 1).padStart(2, "0")} / {String(selectedItem.media.length).padStart(2, "0")}</span><button type="button" onClick={() => navigateMedia(1)} aria-label={t("next")}><ArrowRight size={20} aria-hidden="true" /></button></div>}
+              </div>
+              <button type="button" className={styles.backToCollection} onClick={() => setSelection({ ...selection, mode: "collection" })}>{t("aboutCollection")} <ArrowUpRight size={14} aria-hidden="true" /></button>
             </div>
-            <div className={styles.lightboxBottom}>
-              <div><h3>{selectedItem.title}</h3><p className={styles.mediaCaption} aria-live="polite">{selectedMedia.alt}</p></div>
-              {selectedItem.media.length > 1 && <div className={styles.mediaControls}><button type="button" onClick={() => navigateMedia(-1)} aria-label="Previous image or film"><ArrowLeft size={20} aria-hidden="true" /></button><span aria-live="polite">{String(selection.mediaIndex + 1).padStart(2, "0")} / {String(selectedItem.media.length).padStart(2, "0")}</span><button type="button" onClick={() => navigateMedia(1)} aria-label="Next image or film"><ArrowRight size={20} aria-hidden="true" /></button></div>}
-            </div>
-            <button type="button" className={styles.backToCollection} onClick={() => setSelection({ ...selection, mode: "collection" })}>About this collection <ArrowUpRight size={14} aria-hidden="true" /></button>
-          </div>
-        )}
+          );
+        })()}
       </Dialog>
     </section>
   );

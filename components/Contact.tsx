@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState, type ChangeEvent, type FormEvent, type ReactNode } from "react";
+import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Copy, Download, LoaderCircle, MessageSquare, Phone } from "lucide-react";
 import {
@@ -14,6 +15,7 @@ import {
   type InquiryField,
 } from "@/lib/inquiry";
 import SplitText from "./SplitText";
+import { richTags } from "@/lib/rich";
 import { amharicServices, phoneNumbers, socialLinks } from "@/lib/site";
 import styles from "./Contact.module.css";
 
@@ -35,10 +37,11 @@ function Field({
   children: ReactNode;
   full?: boolean;
 }) {
+  const t = useTranslations("contact");
   return (
     <div className={`${styles.field} ${full ? styles.full : ""}`}>
       <label htmlFor={id}>
-        {label}{optional && <span className={styles.optional}> (optional)</span>}
+        {label}{optional && <span className={styles.optional}> {t("optional")}</span>}
       </label>
       {children}
       {error && <p className={styles.fieldError} id={`${id}-error`}>{error}</p>}
@@ -47,6 +50,10 @@ function Field({
 }
 
 export default function Contact({ deliveryConfigured = false }: { deliveryConfigured?: boolean }) {
+  const t = useTranslations("contact");
+  const common = useTranslations("common");
+  const panel = useTranslations("contactPanel");
+  const types = useTranslations("eventTypes");
   const id = useId();
   const reduceMotion = useReducedMotion();
   const formRef = useRef<HTMLFormElement>(null);
@@ -157,7 +164,7 @@ export default function Contact({ deliveryConfigured = false }: { deliveryConfig
           focusError(result.errors);
         }
         setDeliveryUnconfirmed(response.status >= 500);
-        setSubmissionError(result.message || "Delivery could not be confirmed. Please use the manual contact options.");
+        setSubmissionError(result.message || t("deliveryFailed"));
         return;
       }
       setReviewText(formatInquiry(validation.data));
@@ -167,7 +174,7 @@ export default function Contact({ deliveryConfigured = false }: { deliveryConfig
       focusReview();
     } catch {
       setDeliveryUnconfirmed(true);
-      setSubmissionError("Delivery could not be confirmed. Your details are still here; please call the studio or prepare a manual inquiry below.");
+      setSubmissionError(t("deliveryOffline"));
     } finally {
       clearTimeout(timeout);
       pendingRef.current = false;
@@ -179,11 +186,11 @@ export default function Contact({ deliveryConfigured = false }: { deliveryConfig
     try {
       if (!navigator.clipboard) throw new Error("Clipboard unavailable");
       await navigator.clipboard.writeText(reviewText);
-      setCopyStatus("Copied. You can paste your inquiry into a message.");
+      setCopyStatus("copied");
     } catch {
       textRef.current?.focus();
       textRef.current?.select();
-      setCopyStatus("Your inquiry text is selected. Use your device’s Copy command to copy it.");
+      setCopyStatus("selected");
     }
   }
 
@@ -217,23 +224,23 @@ export default function Contact({ deliveryConfigured = false }: { deliveryConfig
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.8 }}
         >
-          <p className={styles.eyebrow}>Your next chapter</p>
-          <SplitText as="h2" id={`${id}-heading`}>Every extraordinary event begins with a <em>conversation.</em></SplitText>
-          <p className={styles.introCopy}>A place. A feeling. A first idea. Tell us what you are imagining, and let’s begin there.</p>
+          <p className={styles.eyebrow}>{t("eyebrow")}</p>
+          <SplitText as="h2" id={`${id}-heading`}>{t.rich("title", richTags)}</SplitText>
+          <p className={styles.introCopy}>{t("copy")}</p>
 
-          <a className={styles.studioCard} href={PHONE_URI} aria-label="Call Timeless Decor and Event on 0941097286">
+          <a className={styles.studioCard} href={PHONE_URI} aria-label={t("callAria")}>
             <span className={styles.cardTop}>
-              <span className={styles.eyebrow}>Speak to our studio</span>
+              <span className={styles.eyebrow}>{t("speak")}</span>
               <span className={styles.phoneIcon}><Phone size={17} strokeWidth={1.4} aria-hidden="true" /></span>
             </span>
             <span className={styles.phoneNumber}>0941097286</span>
-            <span className={styles.cardBottom}>Timeless Décor &amp; Events <ArrowUpRight size={17} aria-hidden="true" /></span>
+            <span className={styles.cardBottom}>{common("brand")} <ArrowUpRight size={17} aria-hidden="true" /></span>
           </a>
           <div className={styles.moreContact}>
-            <p className={styles.moreLabel}>More ways to reach us</p>
+            <p className={styles.moreLabel}>{t("more")}</p>
             <div className={styles.moreRow}>
               {phoneNumbers.slice(1).map((phone) => <a key={phone.href} href={phone.href}>{phone.display}</a>)}
-              {socialLinks.map((link) => <a key={link.label} href={link.url} target="_blank" rel="noopener noreferrer">{link.label} · {link.handle}</a>)}
+              {socialLinks.map((link) => <a key={link.label} href={link.url} target="_blank" rel="noopener noreferrer">{link.label} · {link.label === "TikTok" ? panel("followUs") : link.handle}</a>)}
             </div>
             <p className={styles.amharic} lang="am">{amharicServices.join(" · ")}</p>
           </div>
@@ -249,50 +256,50 @@ export default function Contact({ deliveryConfigured = false }: { deliveryConfig
           {mode === "form" ? (
             <>
               <div className={styles.formIntro}>
-                <span className={styles.eyebrow}>An invitation to imagine</span>
-                <p>A few details, a world of possibility.</p>
+                <span className={styles.eyebrow}>{t("formEyebrow")}</span>
+                <p>{t("formLead")}</p>
               </div>
               <form ref={formRef} onSubmit={handleSubmit} noValidate>
                 {Object.keys(errors).length > 0 && (
                   <p className={styles.errorSummary} role="alert" ref={errorRef} tabIndex={-1}>
-                    {errors.form || "Please check the highlighted fields below."}
+                    {errors.form || t("summary")}
                   </p>
                 )}
                 <div className={styles.fields}>
-                  <Field id={`${id}-name`} label="Your name" error={errors.name}>
-                    <input {...inputProps("name")} autoComplete="name" placeholder="Full name" required maxLength={100} />
+                  <Field id={`${id}-name`} label={t("name")} error={errors.name}>
+                    <input {...inputProps("name")} autoComplete="name" placeholder={t("namePlaceholder")} required maxLength={100} />
                   </Field>
-                  <Field id={`${id}-phone`} label="Phone number" error={errors.phone}>
-                    <input {...inputProps("phone")} type="tel" autoComplete="tel" placeholder="Your contact number" required maxLength={40} />
+                  <Field id={`${id}-phone`} label={t("phone")} error={errors.phone}>
+                    <input {...inputProps("phone")} type="tel" autoComplete="tel" placeholder={t("phonePlaceholder")} required maxLength={40} />
                   </Field>
-                  <Field id={`${id}-email`} label="Email address" optional error={errors.email}>
-                    <input {...inputProps("email")} type="email" autoComplete="email" placeholder="you@example.com" maxLength={254} />
+                  <Field id={`${id}-email`} label={t("email")} optional error={errors.email}>
+                    <input {...inputProps("email")} type="email" autoComplete="email" placeholder={t("emailPlaceholder")} maxLength={254} />
                   </Field>
-                  <Field id={`${id}-eventType`} label="Occasion" error={errors.eventType}>
+                  <Field id={`${id}-eventType`} label={t("occasion")} error={errors.eventType}>
                     <select {...inputProps("eventType")} required>
-                      <option value="">Select your occasion</option>
-                      {EVENT_TYPES.map((type) => <option key={type} value={type}>{type}</option>)}
+                      <option value="">{t("occasionPlaceholder")}</option>
+                      {EVENT_TYPES.map((type) => <option key={type} value={type}>{types(type)}</option>)}
                     </select>
                   </Field>
-                  <Field id={`${id}-eventDate`} label="Preferred date" optional error={errors.eventDate}>
+                  <Field id={`${id}-eventDate`} label={t("date")} optional error={errors.eventDate}>
                     <input {...inputProps("eventDate")} type="date" min={today || undefined} />
                   </Field>
-                  <Field id={`${id}-guestCount`} label="Number of guests" optional error={errors.guestCount}>
-                    <input {...inputProps("guestCount")} type="number" inputMode="numeric" min={1} max={100000} step={1} placeholder="Estimated guest count" />
+                  <Field id={`${id}-guestCount`} label={t("guests")} optional error={errors.guestCount}>
+                    <input {...inputProps("guestCount")} type="number" inputMode="numeric" min={1} max={100000} step={1} placeholder={t("guestsPlaceholder")} />
                   </Field>
-                  <Field id={`${id}-budget`} label="Budget range" optional error={errors.budget}>
-                    <input {...inputProps("budget")} placeholder="Your preferred range & currency" maxLength={160} />
+                  <Field id={`${id}-budget`} label={t("budget")} optional error={errors.budget}>
+                    <input {...inputProps("budget")} placeholder={t("budgetPlaceholder")} maxLength={160} />
                   </Field>
-                  <Field id={`${id}-venue`} label="Venue or location" optional error={errors.venue}>
-                    <input {...inputProps("venue")} placeholder="A venue, a city, or still deciding" maxLength={200} />
+                  <Field id={`${id}-venue`} label={t("venue")} optional error={errors.venue}>
+                    <input {...inputProps("venue")} placeholder={t("venuePlaceholder")} maxLength={200} />
                   </Field>
-                  <Field id={`${id}-message`} label="The feeling you have in mind" optional error={errors.message} full>
-                    <textarea {...inputProps("message")} rows={3} maxLength={3000} placeholder="Tell us about the atmosphere, the details, the moment…" />
+                  <Field id={`${id}-message`} label={t("message")} optional error={errors.message} full>
+                    <textarea {...inputProps("message")} rows={3} maxLength={3000} placeholder={t("messagePlaceholder")} />
                   </Field>
                 </div>
 
                 <div className={styles.honeypot} aria-hidden="true">
-                  <label htmlFor={`${id}-website`}>Leave this field empty</label>
+                  <label htmlFor={`${id}-website`}>{t("honeypot")}</label>
                   <input {...inputProps("website")} tabIndex={-1} autoComplete="off" />
                 </div>
                 <div className={styles.consentWrap}>
@@ -308,7 +315,7 @@ export default function Contact({ deliveryConfigured = false }: { deliveryConfig
                       aria-invalid={Boolean(errors.consent)}
                       aria-describedby={errors.consent ? `${id}-consent-error` : undefined}
                     />
-                    <span>I agree that Timeless Decor and Event may contact me about this inquiry.</span>
+                    <span>{t("consent")}</span>
                   </label>
                   {errors.consent && <p className={styles.fieldError} id={`${id}-consent-error`}>{errors.consent}</p>}
                 </div>
@@ -317,58 +324,58 @@ export default function Contact({ deliveryConfigured = false }: { deliveryConfig
                   <div className={styles.deliveryError}>
                     <p role="alert">{submissionError}</p>
                     <button type="button" onClick={prepareManually} className={styles.textButton}>
-                      Prepare a manual inquiry <ArrowUpRight size={15} aria-hidden="true" />
+                      {t("manual")} <ArrowUpRight size={15} aria-hidden="true" />
                     </button>
                   </div>
                 )}
 
                 <button className={styles.submitButton} type="submit" disabled={isSubmitting}>
-                  <span>{isSubmitting ? "Submitting your inquiry" : deliveryConfigured ? "Send my inquiry" : "Prepare my inquiry"}</span>
+                  <span>{isSubmitting ? t("submitting") : deliveryConfigured ? t("send") : t("prepare")}</span>
                   {isSubmitting
                     ? <LoaderCircle size={19} className={styles.spinner} aria-hidden="true" />
                     : <ArrowRight size={21} strokeWidth={1.4} aria-hidden="true" />}
                 </button>
                 <p className={styles.privacyNote}>
                   {deliveryConfigured
-                    ? "Your details will be used to respond to this inquiry. Submitting a request does not confirm a booking."
-                    : "Review your inquiry, then choose how to share it. Preparing this form does not send your details."}
+                    ? t("noteDelivery")
+                    : t("noteManual")}
                 </p>
               </form>
             </>
           ) : (
             <div className={styles.reviewPanel}>
-              <span className={styles.eyebrow}>{mode === "sent" ? "A beautiful beginning" : "One step closer"}</span>
+              <span className={styles.eyebrow}>{mode === "sent" ? t("reviewEyebrowSent") : t("reviewEyebrow")}</span>
               <h3 ref={reviewRef} tabIndex={-1}>
-                {mode === "sent" ? "Your inquiry has been submitted." : "Your vision, ready to share."}
+                {mode === "sent" ? t("reviewTitleSent") : t("reviewTitle")}
               </h3>
               <p className={styles.reviewStatus} role="status">
                 {mode === "sent"
-                  ? "The booking service has accepted your details. Please call the studio if you need to confirm availability."
+                  ? t("statusSent")
                   : deliveryUnconfirmed
-                    ? "Your inquiry is ready. Delivery could not be confirmed. Please contact the studio before sending again."
-                    : "Your inquiry is ready. It has not been sent."}
+                    ? t("statusUnconfirmed")
+                    : t("statusReady")}
               </p>
-              <label htmlFor={`${id}-review`} className={styles.reviewLabel}>Your inquiry — select or copy the text</label>
+              <label htmlFor={`${id}-review`} className={styles.reviewLabel}>{t("reviewLabel")}</label>
               <textarea id={`${id}-review`} className={styles.reviewText} ref={textRef} value={reviewText} readOnly rows={11} spellCheck={false} />
               <div className={styles.handoffActions}>
                 <button type="button" onClick={copyInquiry} className={styles.actionButton}>
-                  {copyStatus.startsWith("Copied") ? <Check size={16} aria-hidden="true" /> : <Copy size={16} aria-hidden="true" />}
-                  Copy inquiry
+                  {copyStatus === "copied" ? <Check size={16} aria-hidden="true" /> : <Copy size={16} aria-hidden="true" />}
+                  {t("copy")}
                 </button>
                 <button type="button" onClick={downloadInquiry} className={styles.actionButton}>
-                  <Download size={16} aria-hidden="true" /> Save as text
+                  <Download size={16} aria-hidden="true" /> {t("save")}
                 </button>
                 {mode !== "sent" && (
                   <a href={`sms:+251941097286?body=${encodeURIComponent(reviewText)}`} className={`${styles.actionButton} ${styles.smsButton}`}>
-                    <MessageSquare size={16} aria-hidden="true" /> Open SMS <ArrowUpRight size={16} aria-hidden="true" />
+                    <MessageSquare size={16} aria-hidden="true" /> {t("sms")} <ArrowUpRight size={16} aria-hidden="true" />
                   </a>
                 )}
               </div>
-              <p className={styles.copyStatus} aria-live="polite">{copyStatus}</p>
-              {mode !== "sent" && <p className={styles.privacyNote}>SMS opens your device’s messaging app. Review the message and send it there when you are ready.</p>}
+              <p className={styles.copyStatus} aria-live="polite">{copyStatus ? t(copyStatus as "copied" | "selected") : ""}</p>
+              {mode !== "sent" && <p className={styles.privacyNote}>{t("smsNote")}</p>}
               <div className={styles.reviewFooter}>
-                <button type="button" className={styles.textButton} onClick={editDetails}><ArrowLeft size={15} aria-hidden="true" /> Edit details</button>
-                <a className={styles.textButton} href={PHONE_URI}>Call the studio <ArrowUpRight size={15} aria-hidden="true" /></a>
+                <button type="button" className={styles.textButton} onClick={editDetails}><ArrowLeft size={15} aria-hidden="true" /> {t("edit")}</button>
+                <a className={styles.textButton} href={PHONE_URI}>{common("callStudio")} <ArrowUpRight size={15} aria-hidden="true" /></a>
               </div>
             </div>
           )}

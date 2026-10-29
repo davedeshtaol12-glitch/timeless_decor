@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { AnimatePresence, motion, useMotionValueEvent, useReducedMotion, useScroll, useSpring, useTransform } from "framer-motion";
 import { ArrowUpRight, Plus, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -9,6 +10,7 @@ const COUNT = heroPanels.length;
 const STEP = 360 / COUNT;
 
 export default function Reel() {
+  const t = useTranslations("reel");
   const [active, setActive] = useState(0);
   const [sound, setSound] = useState(false);
   const [pageVisible, setPageVisible] = useState(true);
@@ -21,6 +23,7 @@ export default function Reel() {
   const eased = useSpring(scrollYProgress, { stiffness: 70, damping: 22, mass: 0.6 });
   const rotation = useTransform(eased, [0, 1], [0, -(COUNT - 1) * STEP]);
   const slide = heroPanels[active];
+  const panelText = (id: string, key: "label" | "caption" | "alt") => t(`panels.${id}.${key}`);
 
   useMotionValueEvent(eased, "change", (value) => setActive(Math.min(COUNT - 1, Math.max(0, Math.round(value * (COUNT - 1))))));
 
@@ -49,17 +52,17 @@ export default function Reel() {
   };
 
   return <>
-    <section id="reel" ref={sectionRef} className="reel" aria-label="A reel of recent celebrations" onPointerMove={moveCursor}>
+    <section id="reel" ref={sectionRef} className="reel" aria-label={t("aria")} onPointerMove={moveCursor}>
       <div className="reel-stage">
-        <h2 className="sr-only">A reel of recent celebrations</h2>
+        <h2 className="sr-only">{t("heading")}</h2>
         <div className="ring-scene" aria-hidden={false}>
           <div className="ring-tilt"><motion.div className="ring" style={{ rotateY: reduced ? 0 : rotation }}>
             {heroPanels.map((panel, index) => (
               <button type="button" key={panel.id} className={`ring-panel ${index === active ? "is-active" : ""}`}
                 style={{ transform: `rotateY(${index * STEP}deg) translateZ(var(--ring-radius))` }}
-                onClick={() => goTo(index)} aria-label={`${panel.label}: ${panel.caption}`} aria-current={index === active}>
+                onClick={() => goTo(index)} aria-label={`${panelText(panel.id, "label")}: ${panelText(panel.id, "caption")}`} aria-current={index === active}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={panel.image} alt={panel.alt} draggable={false} loading="eager" />
+                <img src={panel.image} alt={panelText(panel.id, "alt")} draggable={false} loading="eager" />
                 {index === active && panel.video && !reduced && <video key={panel.id} ref={videoRef} src={panel.video} poster={panel.image} muted={!sound} loop playsInline preload="auto" aria-hidden="true" tabIndex={-1} />}
               </button>
             ))}
@@ -69,19 +72,19 @@ export default function Reel() {
           <Plus size={13} strokeWidth={1.2} aria-hidden="true" />
           <AnimatePresence mode="wait">
             <motion.div key={slide.id} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.45 }}>
-              <p className="reel-title">{slide.label}</p>
-              <p className="reel-caption">{slide.caption}</p>
+              <p className="reel-title">{panelText(slide.id, "label")}</p>
+              <p className="reel-caption">{panelText(slide.id, "caption")}</p>
             </motion.div>
           </AnimatePresence>
-          <a href="#contact" className="reel-cta">Begin your celebration <ArrowUpRight size={14} aria-hidden="true" /></a>
+          <a href="#contact" className="reel-cta">{t("cta")} <ArrowUpRight size={14} aria-hidden="true" /></a>
         </div>
-        <p className="reel-credit">Timeless Decor <span>and Event</span></p>
+        <p className="reel-credit">{t("credit")} <span>{t("creditSuffix")}</span></p>
         <div className="reel-index" aria-hidden="true">{String(active + 1).padStart(2, "0")} / {String(COUNT).padStart(2, "0")}</div>
-        <button type="button" className="sound-toggle" onClick={() => setSound((value) => !value)} aria-pressed={sound} aria-label={sound ? "Turn film sound off" : "Turn film sound on"}>
-          <span>{sound ? "ON" : "OFF"}</span>{sound ? <Volume2 size={15} aria-hidden="true" /> : <VolumeX size={15} aria-hidden="true" />}
+        <button type="button" className="sound-toggle" onClick={() => setSound((value) => !value)} aria-pressed={sound} aria-label={sound ? t("soundOn") : t("soundOff")}>
+          <span>{sound ? t("on") : t("off")}</span>{sound ? <Volume2 size={15} aria-hidden="true" /> : <VolumeX size={15} aria-hidden="true" />}
         </button>
-        {!coarse && <div ref={cursorRef} className="explore-cursor" aria-hidden="true"><span>Scroll</span></div>}
-        <span className="reel-hint" aria-hidden="true">Scroll to explore</span>
+        {!coarse && <div ref={cursorRef} className="explore-cursor" aria-hidden="true"><span>{t("cursor")}</span></div>}
+        <span className="reel-hint" aria-hidden="true">{t("hint")}</span>
       </div>
     </section>
   </>;

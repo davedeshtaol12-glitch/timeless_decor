@@ -1,33 +1,26 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Reveal from "./Reveal";
 import SplitText from "./SplitText";
+import { richTags } from "@/lib/rich";
 import styles from "./Process.module.css";
 
-const reasons = [
-  "Professional and experienced team",
-  "Creative and customized designs",
-  "High-quality décor materials",
-  "Affordable packages",
-  "On-time delivery and setup",
-  "Friendly and reliable customer service",
-  "Attention to every detail",
-  "Complete event management solutions",
-];
-
 export default function Process() {
+  const t = useTranslations("process");
+  const reasons = t.raw("reasons") as string[];
   const reduced = useReducedMotion();
   return (
     <section id="process" className={styles.section} aria-labelledby="experience-heading">
       <div className={styles.container}>
         <Reveal className={styles.intro}>
           <div>
-            <p className={styles.eyebrow}><span /> Why choose us</p>
-            <SplitText as="h2" id="experience-heading">Why choose<br /><em>Timeless Décor &amp; Events?</em></SplitText>
+            <p className={styles.eyebrow}><span /> {t("eyebrow")}</p>
+            <SplitText as="h2" id="experience-heading">{t.rich("title", richTags)}</SplitText>
           </div>
-          <p className={styles.lead}>Elegant ideas, dependable people and a team that stays with you from the first conversation to the final detail.</p>
+          <p className={styles.lead}>{t("lead")}</p>
         </Reveal>
 
         <ol className={styles.reasons}>
@@ -43,8 +36,8 @@ export default function Process() {
         </ol>
 
         <div className={styles.bottom}>
-          <p>Every celebration tells a unique story.</p>
-          <a href="#contact">Begin your story <ArrowUpRight size={15} aria-hidden="true" /></a>
+          <p>{t("bottom")}</p>
+          <a href="#contact">{t("bottomCta")} <ArrowUpRight size={15} aria-hidden="true" /></a>
         </div>
       </div>
     </section>

@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import type { ReactNode } from "react";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import CursorFX from "@/components/CursorFX";
 import Providers from "@/components/Providers";
 import { getSiteUrl, siteConfig } from "@/lib/site";
@@ -18,28 +20,39 @@ const sans = localFont({
   variable: "--font-sans", display: "swap", fallback: ["Arial"],
 });
 
-export const metadata: Metadata = {
-  metadataBase: getSiteUrl(),
-  title: { default: "Timeless Décor & Events — Creating Timeless Memories for Every Celebration", template: "%s | Timeless Décor & Events" },
-  description: "A full-service event decoration and planning company. Weddings, birthdays, graduations, baby showers, engagements and corporate events. Call 0941097286.",
-  ...(getSiteUrl() ? { alternates: { canonical: "/" } } : {}),
-  openGraph: {
-    title: "Timeless Décor & Events", description: siteConfig.tagline,
-    siteName: siteConfig.name, locale: "en_US", type: "website",
-    ...(getSiteUrl() ? { images: [{ url: "/media/wedding.webp", width: 640, height: 640, alt: "Ivory and gold décor by Timeless" }] } : {}),
-  },
-  twitter: { card: "summary_large_image", title: siteConfig.name, description: siteConfig.tagline },
-};
+const OG_LOCALES = { en: "en_US", am: "am_ET", om: "om_ET" } as const;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("meta");
+  const locale = await getLocale() as keyof typeof OG_LOCALES;
+  return {
+    metadataBase: getSiteUrl(),
+    title: { default: t("title"), template: t("titleTemplate") },
+    description: t("description"),
+    ...(getSiteUrl() ? { alternates: { canonical: "/" } } : {}),
+    openGraph: {
+      title: t("ogTitle"), description: t("tagline"),
+      siteName: siteConfig.name, locale: OG_LOCALES[locale] ?? "en_US", type: "website",
+      ...(getSiteUrl() ? { images: [{ url: "/media/wedding.webp", width: 640, height: 640, alt: t("ogImageAlt") }] } : {}),
+    },
+    twitter: { card: "summary_large_image", title: t("ogTitle"), description: t("tagline") },
+  };
+}
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#242820" };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default async function RootLayout({ children }: { children: ReactNode }) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+  const t = await getTranslations("common");
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
+    <html lang={locale} className={`${serif.variable} ${sans.variable}`}>
       <body>
-        <a className="skip-link" href="#main">Skip to content</a>
-        <Providers>{children}</Providers>
-        <CursorFX />
-        <noscript><div className="noscript-note">For gallery films and the inquiry form, enable JavaScript. You can always call <a href={siteConfig.phoneHref}>{siteConfig.phone}</a>.</div></noscript>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <a className="skip-link" href="#main">{t("skipToContent")}</a>
+          <Providers>{children}</Providers>
+          <CursorFX />
+          <noscript><div className="noscript-note">{t("noscript")} <a href={siteConfig.phoneHref}>{siteConfig.phone}</a>.</div></noscript>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

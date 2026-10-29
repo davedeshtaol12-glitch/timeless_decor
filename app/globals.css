@@ -453,3 +453,37 @@ html:not(.fx-cursor) .fx-dot, html:not(.fx-cursor) .fx-ring { display: none; }
 .fx-bit i.petal { width: 9px; height: 12px; border-radius: 80% 0 80% 0; }
 .fx-pulse { width: 70px; height: 70px; border: 1.5px solid #d9b46a; border-radius: 50%; box-shadow: 0 0 22px #d9b46a88; }
 @media (prefers-reduced-motion: reduce) { .fx-ring { transition: none; } }
+
+/* Language switcher */
+.lang-switch { display: inline-flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid currentColor; border-radius: 30px; opacity: .92; }
+.lang-switch button { min-width: 38px; min-height: 32px; padding: 0 10px; border: 0; border-radius: 30px; background: transparent; color: inherit; font-size: 10px; letter-spacing: .08em; cursor: pointer; transition: background .3s, color .3s; }
+.lang-switch button:hover { background: #ffffff22; }
+.lang-switch button[aria-pressed="true"] { background: #d9b46a; color: #1c2018; }
+.lang-switch[data-pending] { opacity: .6; }
+.header-actions { gap: 22px; }
+
+/* Services: instant summary that follows hover and focus */
+.service-score { margin-top: 44px; max-width: 380px; padding: 24px 26px 26px; border: 1px solid var(--rule); background: #ffffff55; }
+.score-label { margin: 0 0 16px; font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: #8b6f3d; }
+.score-body { min-height: 150px; }
+.score-title { margin: 0 0 10px; font-family: var(--font-serif), Georgia, serif; font-size: 24px; line-height: 1.15; letter-spacing: -.02em; }
+.score-figures { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.score-number { font-family: var(--font-serif), Georgia, serif; font-size: 68px; font-weight: 300; line-height: .9; letter-spacing: -.05em; color: #8b6f3d; }
+.score-unit { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.score-meter { height: 3px; background: var(--rule); overflow: hidden; }
+.score-meter > span { display: block; height: 100%; background: linear-gradient(90deg, #b98f45, #e9cf95); transform-origin: left; transition: transform .7s cubic-bezier(.22,1,.36,1); }
+.score-share { margin: 12px 0 0; font-size: 11px; color: var(--muted); }
+.score-share strong { color: var(--ink); font-weight: 600; }
+@media (max-width: 900px) { .service-score { margin-top: 28px; } }
+@media (prefers-reduced-motion: reduce) { .score-meter > span { transition: none; } }
+
+/* Header logo and text blend with the film behind them while at the top of the page */
+.site-header:not(.is-scrolled) { mix-blend-mode: screen; }
+.site-header:not(.is-scrolled) .wordmark-logo { filter: brightness(1.25) saturate(1.15); }
+.header-scrim { position: fixed; z-index: 29; inset: 0 0 auto; height: 190px; background: linear-gradient(#10140ecc, #10140e66 55%, transparent); pointer-events: none; transition: opacity .4s; }
+.header-scrim.is-hidden { opacity: 0; }
+
+/* Amharic (Ethiopic script) needs normal tracking and a little more line height */
+html[lang="am"] * { letter-spacing: normal !important; }
+html[lang="am"] :is(h1, h2, h3) { line-height: 1.15 !important; }
+html[lang="am"] body { font-family: var(--font-sans), "Noto Sans Ethiopic", "Nyala", "Abyssinica SIL", Arial, sans-serif; }

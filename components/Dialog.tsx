@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import { X } from "lucide-react";
 import { useEffect, useId, useRef, type ReactNode } from "react";
@@ -7,6 +8,7 @@ import { useEffect, useId, useRef, type ReactNode } from "react";
 export default function Dialog({ open, onClose, title, children, className = "" }: {
   open: boolean; onClose: () => void; title: string; children: ReactNode; className?: string;
 }) {
+  const t = useTranslations("common");
   const ref = useRef<HTMLDialogElement>(null);
   const id = useId();
   const reduced = useReducedMotion();
@@ -31,7 +33,7 @@ export default function Dialog({ open, onClose, title, children, className = "" 
       {open && <motion.div className="dialog-content" initial={{ opacity: curtain ? 1 : 0, y: reduced ? 0 : curtain ? "100%" : 24 }}
         animate={{ opacity: 1, y: 0 }} transition={{ duration: reduced ? 0 : curtain ? 0.75 : 0.35, ease: [0.22, 1, 0.36, 1] }}>
         <h2 id={id} className="sr-only">{title}</h2>
-        <button type="button" className="dialog-close icon-button" onClick={onClose} aria-label="Close dialog">
+        <button type="button" className="dialog-close icon-button" onClick={onClose} aria-label={t("closeDialog")}>
           <X size={22} aria-hidden="true" />
         </button>
         {children}
